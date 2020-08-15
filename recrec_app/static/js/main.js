@@ -21,9 +21,19 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 
 function onEachFeature(feature, layer) {
     layer.bindPopup ("Cuisine Type: " + feature.properties.name)
-}
+    layer.on('mouseover', function () {
+        this.setStyle({
+        'fillColor': '#0000ff'
+        });
+    });
+    layer.on('mouseout', function () {
+        this.setStyle({
+        'fillColor': '#ff0000'
+        });
+    });
+};
 // // Use this link to get the geojson data.
-var link = "static/resources/map.geojson";
+var link = "static/resources/custom.geojson";
 
 // Grabbing our GeoJSON data..
 d3.json(link, function(data) {
