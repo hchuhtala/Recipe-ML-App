@@ -3,7 +3,7 @@
 // // This gets inserted into the div with an id of 'map'
 // //Commented out because tilemap handled by main
 var myMap = L.map("map", {
-    center: [60, 0],
+    center: [50, 0],
     zoom: 2.5
 });
 
@@ -15,6 +15,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     id: 'mapbox/light-v9',
     tileSize: 512,
     zoomOffset: -1,
+    noWrap: true,
     accessToken: API_KEY
 }).addTo(myMap);
 
