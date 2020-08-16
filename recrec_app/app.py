@@ -23,6 +23,14 @@ app = Flask(__name__)
 def home():
     return render_template("index.html")
 
+@app.route("/background")
+def home():
+    return render_template("background.html")
+
+@app.route("/ingredients")
+def home():
+    return render_template("ingredients.html")
+
 #################################################
 # Finish
 #################################################
