@@ -24,11 +24,11 @@ def home():
     return render_template("index.html")
 
 @app.route("/background")
-def home():
+def background():
     return render_template("background.html")
 
 @app.route("/ingredients")
-def home():
+def ingredients():
     return render_template("ingredients.html")
 
 #################################################
