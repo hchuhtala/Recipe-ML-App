@@ -3,7 +3,7 @@ makeResponsive();
 d3.select(window).on("resize", makeResponsive);
 
 function makeResponsive() {
-  let svgArea = d3.select("body").select("svg");
+  let svgArea = d3.select("body").select(".chart");
   
   if (!svgArea.empty()) {
     svgArea.remove();
