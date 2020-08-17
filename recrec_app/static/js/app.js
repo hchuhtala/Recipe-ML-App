@@ -41,7 +41,7 @@ function makeResponsive() {
   let color = d3.scale.ordinal()
     .range(["#8FBC8B","#F0E68C","#FFB6C1","#FFF8DC","#D3D3D3","#FFFACD","#F08080","#FFA07A","#D8BFD8","#B0E0E6","#F5DEB3","#DB7093","#BC8F8F","#D2B48C","#FFD700"]);
 
-  d3.text("ingredientData.csv", function (error, text) {
+  d3.text("static/resources/ingredientData.csv", function (error, text) {
     if (error) throw error;
     let colNames = "text,size,group\n" + text;
     let data = d3.csv.parse(colNames);
