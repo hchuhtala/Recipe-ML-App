@@ -19,6 +19,10 @@ body {
     height: 100%;
     width: 100%;
   }
+  #chart {
+    height: 100%;
+    width: 100%;
+  }
   .navbar-brand{
     background-color: steelblue;
     padding: 22px;

@@ -1,26 +1,21 @@
-makeResponsive();
-
-d3.select(window).on("resize", makeResponsive);
+var chartDiv = document.getElementById("chart");
+var svgArea = d3.select(chartDiv).append("svg");
 
 function makeResponsive() {
-  let svgArea = d3.select("body").select(".chart");
-  
-  if (!svgArea.empty()) {
-    svgArea.remove();
-  }
+  // Extract the width and height that was computed by CSS.
+  var width = chartDiv.clientWidth;
+  var height = chartDiv.clientHeight;
 
-  let svgWidth;
-  if (window.innerWidth > 1500) {
-    svgWidth = 1500;
-  } else {
-    svgWidth = window.innerWidth;
-  };
-  let svgHeight;
-  if (window.innerHeight > 1500) {
-    svgHeight = 1500;
-  } else {
-    svgHeight = window.innerHeight;
-  };
+  let vbWidth = width*1.5;
+  let vbHeight = height*1.5;
+
+  svgArea
+    .attr("width", width)
+    .attr("height", height)
+    .attr("viewBox", `0 0 ${vbWidth} ${vbHeight}`)
+    .attr("overflow","scroll")
+    .attr("preserveAspectRatio","none");
+  //console.log("svg",svg);
 
   let margin = {
     top: 20,
@@ -29,17 +24,13 @@ function makeResponsive() {
     left: 20
   };
 
-  let width = svgWidth - margin.left - margin.right;
-  let height = svgHeight - margin.top - margin.bottom;
 
-  // let width = 960,
-  // height = 500,
   padding = 1.8, // separation between same-color nodes
     clusterPadding = 6, // separation between different-color nodes
     maxRadius = 50;
 
   let color = d3.scale.ordinal()
-    .range(["#8FBC8B","#F0E68C","#FFB6C1","#FFF8DC","#D3D3D3","#FFFACD","#F08080","#FFA07A","#D8BFD8","#B0E0E6","#F5DEB3","#DB7093","#BC8F8F","#D2B48C","#FFD700"]);
+    .range(["#8FBC8B", "#F0E68C", "#FFB6C1", "#FFF8DC", "#D3D3D3", "#FFFACD", "#F08080", "#FFA07A", "#D8BFD8", "#B0E0E6", "#F5DEB3", "#DB7093", "#BC8F8F", "#D2B48C", "#FFD700"]);
 
   d3.text("static/resources/ingredientData.csv", function (error, text) {
     if (error) throw error;
@@ -71,25 +62,23 @@ function makeResponsive() {
 
     let force = d3.layout.force()
       .nodes(nodes)
-      .size([width, height])
+      .size([width*1.5, height*1.5])
       .gravity(.02)
       .charge(0)
       .on("tick", tick)
       .start();
 
-    let svg = d3.select("body").append("svg")
-      .attr("width", width)
-      .attr("height", height);
-
-      svg.append("text")
-      .attr("x", (width / 2))             
-      .attr("y", 0 - (margin.top / 2))
-      .attr("text-anchor", "left")  
-      .style("font-size", "16px") 
-      .text("Select Your Ingredients...");
 
 
-    let node = svg.selectAll("circle")
+    // svgArea.append("text")
+    //   .attr("x", (width / 2))             
+    //   .attr("y", 0 - (margin.top / 2))
+    //   .attr("text-anchor", "left")  
+    //   .style("font-size", "16px") 
+    //   .text("Select Your Ingredients...");
+
+
+    let node = svgArea.selectAll("circle")
       .data(nodes)
       .enter().append("g").call(force.drag);
 
@@ -193,4 +182,8 @@ function makeResponsive() {
     }
     return false;
   };
-};
+}
+
+makeResponsive();
+
+window.addEventListener("resize", makeResponsive);
