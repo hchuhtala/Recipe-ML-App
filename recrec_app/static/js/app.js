@@ -62,7 +62,7 @@ function makeResponsive() {
 
     let force = d3.layout.force()
       .nodes(nodes)
-      .size([width*1.5, height*1.5])
+      .size([width*1.5, height*1.5])//adjusted size to force bubbles to not float out of viewport
       .gravity(.02)
       .charge(0)
       .on("tick", tick)
@@ -100,7 +100,7 @@ function makeResponsive() {
       });
 
 
-
+    //node.exit().remove();
 
     function create_nodes(data, node_counter) {
       let i = cs.indexOf(data[node_counter].group),
