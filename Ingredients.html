@@ -2,18 +2,24 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>Recipe Recommendations</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="static\style\style.css">
+	<meta charset="UTF-8">
+	<title>Recipe Recommendations</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="static\style\style.css">
 </head>
+
 <body>
-	<div class="navbar navbar-expand-lg navbar-light">
-		<a class="navbar-brand" href="Ingredients.html">Select Your Ingredients...</a>
+	<div class="navbar navbar-expand-lg">
+		<a class="navbar-brand">Select Your Ingredients...</a>
+		<div class="collapse navbar-collapse" id="navbarNavDropDown">
+			<button class="btn btn-outline-success my-2 my-sm-0 nav-item" type="submit">View Recipes</button>
+		</div>
 	</div>
-	 <div class="chart">
+	<div class="chart">
 	</div>
-	 <script src="https://d3js.org/d3.v3.min.js"></script>
-	 <script type="text/javascript" src="static\js\app.js"></script>
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<script type="text/javascript" src="static\js\app.js"></script>
 </body>
+
 </html>
