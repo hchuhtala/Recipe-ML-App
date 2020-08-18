@@ -1,11 +1,11 @@
 # Recipe-ML-App
 
-# Data Sources
-* **Kaggle:**(https://www.kaggle.com/c/whats-cooking/data)
-*	**Spoonacular API**(https://spoonacular.com/food-api)
-
 # Description
-Using machine learning, we created an interactive web app that gives the user recommended recipes based on a region or ingredient selected 
+> Using machine learning, we created an interactive web app that gives the user recommended recipes based on a region or ingredient selected 
+
+# Data Sources
+* [**Kaggle**](https://www.kaggle.com/c/whats-cooking/data)
+*	[**Spoonacular API**](https://spoonacular.com/food-api)
 
 # Analysis
 * Clean, modify and filter the data using Pandas and Jupyter notebook 
@@ -14,14 +14,14 @@ Using machine learning, we created an interactive web app that gives the user re
 * Use D3, Leaflet and Bootstrap to visualize the data
 
 # Built With
-* Leaflet
-* Python
-- Pandas
-- Heroku
-- Bootstrap
+* [Leaflet](https://leafletjs.com/)
+* [Python](https://www.python.org/)
+* [Pandas](https://pandas.pydata.org/)
+* [Heroku](https://www.heroku.com/)
+* [Bootstrap](https://getbootstrap.com/)
 
 # Team
-Ian Mac Moore @blueplusred
-Haley Huhtala @hchuhtala
-Kaylene Retka @knretka
-Briana Friendt @frieb01
+* Ian Mac Moore [@blueplusred](https://github.com/blueplusred)
+* Haley Huhtala [@hchuhtala](https://github.com/hchuhtala)
+* Kaylene Retka [@knretka](https://github.com/knretka)
+* Briana Friendt [@frieb01](https://github.com/frieb01)
