@@ -3,7 +3,7 @@
 // // This gets inserted into the div with an id of 'map'
 // //Commented out because tilemap handled by main
 var myMap = L.map("map", {
-    center: [50, 0],
+    center: [30, 20],
     zoom: 2.5
 });
 
@@ -24,11 +24,11 @@ var cuisineColor = {
     "Italy" : "#51f374",
     "France" : "#6bd1e0",
     "Spain" : "#c6e759",
-    "India" : "#5f74ee",
+    "India" : "#44c18b",
     "China" : "#8e47b5",
-    "Korea" : "#7bfdda",
+    "Korea" : "#c6e759",
     "Thailand" : "#34ebeb",
-    "Japan" : "#8a0a69",
+    "Japan" : "#5f74ee",
     "United States" : "#6bd1e0",
     "Mexico" : "#44c18b",
     "Greece" : "#df2a17",
