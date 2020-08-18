@@ -20,39 +20,44 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 }).addTo(myMap);
 //["7400b8","6930c3","5e60ce","5390d9","4ea8de","48bfe3","56cfe1","64dfdf","72efdd","80ffdb"]
 var cuisineColor = {
-    "Vietnam" : "#7400b8",
-    "Italy" : "#6930c3",
-    "France" : "#5e60ce",
-    "Spain" : "#5390d9",
-    "India" : "#4ea8de",
-    "China" : "#48bfe3",
-    "Korea" : "#56cfe1",
-    "Thailand" : "#64dfdf",
-    "Japan" : "#72efdd",
-    "United States" : "#80ffdb",
-    "Mexico" : "#7400b8",
-    "Greece" : "#80ffdb",
-    "Southern" : "#6930c3",
-    "Latin America" : "#5e60ce",
-    "Louisiana Creole" : "#5390d9",
-    "United Kingdom" : "#4ea8de"
+    "Vietnam" : "red",
+    "Italy" : "#51f374",
+    "France" : "#6bd1e0",
+    "Spain" : "#c6e759",
+    "India" : "#5f74ee",
+    "China" : "#8e47b5",
+    "Korea" : "#7bfdda",
+    "Thailand" : "#34ebeb",
+    "Japan" : "#8a0a69",
+    "United States" : "#6bd1e0",
+    "Mexico" : "#44c18b",
+    "Greece" : "#df2a17",
+    "Southern" : "yellow",
+    "Latin America" : "#8e90b7",
+    "Louisiana Creole" : "red",
+    "United Kingdom" : "#730ae4"
 };
 
 function onEachFeature(feature, layer) {
     layer.bindPopup ("Cuisine Type: " + feature.properties.name);
     layer.setStyle({
         'fillColor': cuisineColor[feature.properties.name],
-        'fillOpacity' : 0.4
+        'fillOpacity' : 0.4,
+        // 'stroke' : false,
+        'weight' : 1,
+        'color' : '#8e90b7'
         });
     layer.on('mouseover', function () {
         this.setStyle({
             'fillOpacity' : 0.7
         });
+        this.popupopen;
     });
     layer.on('mouseout', function () {
         this.setStyle({
             'fillOpacity' : 0.4
         });
+        this.popupclose;
     });
 };
 // // Use this link to get the geojson data.
