@@ -1,36 +1,57 @@
-var chartDiv = document.getElementById("chart");
-var svgArea = d3.select(chartDiv).append("svg");
+makeResponsive();
+
+d3.select(window).on("resize", makeResponsive);
 
 function makeResponsive() {
-  // Extract the width and height that was computed by CSS.
-  var width = chartDiv.clientWidth;
-  var height = chartDiv.clientHeight;
+  let svgArea = d3.select("body").select("svg");
 
-  let vbWidth = width*1.5;
-  let vbHeight = height*1.5;
+  if (!svgArea.empty()) {
+    svgArea.remove();
+  }
 
-  svgArea
-    .attr("width", width)
-    .attr("height", height)
-    .attr("viewBox", `0 0 ${vbWidth} ${vbHeight}`)
-    .attr("overflow","scroll")
-    .attr("preserveAspectRatio","none");
-  //console.log("svg",svg);
+  let svgWidth = window.innerWidth;
+  let svgHeight = window.innerHeight;
 
   let margin = {
-    top: 20,
+    top: 40,
     right: 40,
-    bottom: 5,
-    left: 20
+    bottom: 40,
+    left: 40
+  };
+
+  let width = svgWidth - margin.left - margin.right;
+  let height = svgHeight - margin.top - margin.bottom;
+  padding = 1.8, // separation between same-color nodes
+    clusterPadding = 6, // separation between different-color nodes
+    maxRadius = 60;
+
+  let svg = d3.select(".chart")
+    .append("svg")
+    .attr("width", svgWidth)
+    .attr("height", svgHeight);
+
+  // For legend
+  let legendArea = d3.select("svg").append("g")
+    .attr("transform", "translate(10,-90)");
+  let legendNames = ["Produce", "Baking", "Spices and Seasonings", "Milk, Eggs, Other Dairy", "Canned and Jarred", "Cheese", "Meat", "Oil, Vinegar, Salad Dressing", "Condiments", "Ethnic Foods", "Pasta and Rice", "Sweet Snacks & Nuts", "Beverages", "Bakery/Bread", "Nut butters, Jams, and Honey"];
+  let legendColors = ["#8FBC8B", "#F0E68C", "#FFB6C1", "#FFF8DC", "#D3D3D3", "#FFFACD", "#F08080", "#FFA07A", "#D8BFD8", "#B0E0E6", "#F5DEB3", "#DB7093", "#BC8F8F", "#D2B48C", "#FFD700"];
+  let yVal = 100;
+  // Handmade legend
+  for (let i = 0; i < legendNames.length; i++) {
+    let xCircle = 50;
+    let xText = 70;
+
+    yVal = yVal + 30;
+
+    legendArea.append("circle").attr("cx", xCircle).attr("cy", yVal).attr("r", 10).style("fill", legendColors[i]).style("stroke", "black");
+    legendArea.append("text").attr("x", xText).attr("y", yVal).text(legendNames[i]).style("font-size", "15px").attr("alignment-baseline", "middle");
   };
 
 
-  padding = 1.8, // separation between same-color nodes
-    clusterPadding = 6, // separation between different-color nodes
-    maxRadius = 50;
-
   let color = d3.scale.ordinal()
+    .domain(["Produce", "Baking", "Spices and Seasonings", "Milk, Eggs, Other Dairy", "Canned and Jarred", "Cheese", "Meat", "Oil, Vinegar, Salad Dressing", "Condiments", "Ethnic Foods", "Pasta and Rice", "Sweet Snacks & Nuts", "Beverages", "Bakery/Bread", "Nut butters, Jams, and Honey"])
     .range(["#8FBC8B", "#F0E68C", "#FFB6C1", "#FFF8DC", "#D3D3D3", "#FFFACD", "#F08080", "#FFA07A", "#D8BFD8", "#B0E0E6", "#F5DEB3", "#DB7093", "#BC8F8F", "#D2B48C", "#FFD700"]);
+
 
   d3.text("static/resources/ingredientData.csv", function (error, text) {
     if (error) throw error;
@@ -39,6 +60,7 @@ function makeResponsive() {
 
     data.forEach(function (d) {
       d.size = +d.size;
+      //console.log(d.size)
     });
 
 
@@ -49,7 +71,7 @@ function makeResponsive() {
         cs.push(d.group);
       }
     });
-
+    // console.log(cs)
     let n = data.length, // total number of nodes
       m = cs.length; // number of distinct clusters
 
@@ -60,25 +82,18 @@ function makeResponsive() {
       nodes.push(create_nodes(data, i));
     }
 
+    // console.log(width)
+    // console.log(height)
     let force = d3.layout.force()
       .nodes(nodes)
-      .size([width*1.5, height*1.5])//adjusted size to force bubbles to not float out of viewport
+      .size([width, height])
       .gravity(.02)
       .charge(0)
       .on("tick", tick)
       .start();
 
 
-
-    // svgArea.append("text")
-    //   .attr("x", (width / 2))             
-    //   .attr("y", 0 - (margin.top / 2))
-    //   .attr("text-anchor", "left")  
-    //   .style("font-size", "16px") 
-    //   .text("Select Your Ingredients...");
-
-
-    let node = svgArea.selectAll("circle")
+    let node = svg.selectAll("circle")
       .data(nodes)
       .enter().append("g").call(force.drag);
 
@@ -86,6 +101,9 @@ function makeResponsive() {
     node.append("circle")
       .style("fill", function (d) {
         return color(d.cluster);
+      })
+      .attr("value", function (d) {
+        return d.text.substring(0, d.radius / 3)
       })
       .attr("r", function (d) {
         return d.radius
@@ -99,8 +117,36 @@ function makeResponsive() {
         return d.text.substring(0, d.radius / 3);
       });
 
+    // begin section from homework
+    let bubbleGroup = d3.select("svg").selectAll("g");
+    let ingredientArray = [];
 
-    //node.exit().remove();
+    bubbleGroup.selectAll("circle")
+      .on("click", function () {
+        let value = d3.select(this).attr("value");
+
+        if (ingredientArray.includes(value)) {
+          for (let i = 0; i < ingredientArray.length; i++) {
+            if (ingredientArray[i] === value) {
+              ingredientArray.splice(i, 1);
+            }
+          }
+        } else {
+          ingredientArray.push(value);
+        };
+        console.log(value);
+        console.log(ingredientArray)
+
+        let opaqStyle = d3.select(this).style("opacity");
+        if (opaqStyle == 1) {
+          d3.select(this).style("opacity", .6).style("stroke", "white");
+        } else {
+          d3.select(this).style("opacity", 1).style("stroke", "black");
+        }
+        return ingredientArray;
+      });
+
+    // end section from homework
 
     function create_nodes(data, node_counter) {
       let i = cs.indexOf(data[node_counter].group),
@@ -119,10 +165,12 @@ function makeResponsive() {
 
 
     function tick(e) {
+      //console.log(e.alpha)
       node.each(cluster(10 * e.alpha * e.alpha))
         .each(collide(.5))
         .attr("transform", function (d) {
           let k = "translate(" + d.x + "," + d.y + ")";
+          // console.log(d.x,",",d.y);
           return k;
         })
 
@@ -132,6 +180,7 @@ function makeResponsive() {
     function cluster(alpha) {
       return function (d) {
         let cluster = clusters[d.cluster];
+        //console.log(cluster);
         if (cluster === d) return;
         let x = d.x - cluster.x,
           y = d.y - cluster.y,
@@ -182,8 +231,4 @@ function makeResponsive() {
     }
     return false;
   };
-}
-
-makeResponsive();
-
-window.addEventListener("resize", makeResponsive);
+};
