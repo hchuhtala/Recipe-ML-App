@@ -18,17 +18,40 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     noWrap: true,
     accessToken: API_KEY
 }).addTo(myMap);
+//["7400b8","6930c3","5e60ce","5390d9","4ea8de","48bfe3","56cfe1","64dfdf","72efdd","80ffdb"]
+var cuisineColor = {
+    "Vietnam" : "#7400b8",
+    "Italy" : "#6930c3",
+    "France" : "#5e60ce",
+    "Spain" : "#5390d9",
+    "India" : "#4ea8de",
+    "China" : "#48bfe3",
+    "Korea" : "#56cfe1",
+    "Thailand" : "#64dfdf",
+    "Japan" : "#72efdd",
+    "United States" : "#80ffdb",
+    "Mexico" : "#7400b8",
+    "Greece" : "#80ffdb",
+    "Southern" : "#6930c3",
+    "Latin America" : "#5e60ce",
+    "Louisiana Creole" : "#5390d9",
+    "United Kingdom" : "#4ea8de"
+};
 
 function onEachFeature(feature, layer) {
-    layer.bindPopup ("Cuisine Type: " + feature.properties.name)
+    layer.bindPopup ("Cuisine Type: " + feature.properties.name);
+    layer.setStyle({
+        'fillColor': cuisineColor[feature.properties.name],
+        'fillOpacity' : 0.4
+        });
     layer.on('mouseover', function () {
         this.setStyle({
-        'fillColor': '#0000ff'
+            'fillOpacity' : 0.7
         });
     });
     layer.on('mouseout', function () {
         this.setStyle({
-        'fillColor': '#ff0000'
+            'fillOpacity' : 0.4
         });
     });
 };
