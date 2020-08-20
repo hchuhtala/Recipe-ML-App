@@ -1,3 +1,4 @@
+/* Ingredients page */
 text {
   font: 13px "Calibri";
   font-weight: bolder;
@@ -11,10 +12,33 @@ circle {
   opacity: .6;
   stroke-width: 1;
 }
+/* End Ingredients Page */
+
+/* Recipes page */
+thead {
+  font-size: 16pt;
+  background-color: lightsalmon;
+  color: white;
+  stroke: none;
+}
+
+.recipe-title {
+  font-size: 16pt;
+  font-weight: bolder;
+}
+
+body {
+  font-size: 16pt;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+  background-color: bisque;
+}
+/* End Recipes page */
 
 /* Navigation Bar */
 .navbar-brand{
-  background-color: lightsteelblue;
+  background-color: "#bc7882";
   padding: 22px;
   margin-left: 50px;
   font-weight: bolder;
