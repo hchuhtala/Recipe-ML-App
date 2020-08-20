@@ -30,7 +30,7 @@ d3.json(ingredientCall, function (jsonData) {
                         "title": recipeTitle,
                         "url" : recipeURL
                     });
-                    // console.log(resultsArray);
+                    console.log(resultsArray);
 
                     let tableBody = d3.select("tbody");
 
@@ -51,8 +51,12 @@ d3.json(ingredientCall, function (jsonData) {
                                     let newCell = newRow.append("td").attr("id",imgID);
                                     displayImage(value,imgID);
                                 }
+                                else if (key == "url") {
+                                    let newCell = newRow.append("td").append('a').attr("href",value).text(value);
+                                }
                                 else {
                                 let newCell = newRow.append("td").text(value);
+                                newCell.classed("recipe-title",true);
                                 };
                             });
                         });
