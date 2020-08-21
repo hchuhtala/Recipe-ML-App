@@ -68,3 +68,4 @@ d3.json(ingredientCall, function (jsonData) {
                     addTableRows(resultsArray);
                 });
             });
+        });
