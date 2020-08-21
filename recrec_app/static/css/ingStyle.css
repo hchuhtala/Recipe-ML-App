@@ -1,21 +1,11 @@
 /* Navigation Bar */
 .select-ingredients{
-  background-color: steelblue;
+  background-color: lightsteelblue;
   padding: 22px;
-  margin-left: 50px;
   font-weight: bolder;
   line-height: normal;
   font-size: 25px;
 }
-#navbarSupportedContent{background-color: white;}
-.nav-item {align-self: right;}
-.navbar-light .select-ingredients {color: white;}
-.navbar {
-  padding: 0;
-  height: 75px;
-  background-color: white;
-}
-#navbarDropdown {color: black}
 .ml-auto {margin-right: 20px;}
 .container {
   align-content: center;
@@ -23,9 +13,9 @@
   margin-top: 50px;
 }
 .navbar-brand{
-  background-color: steelblue;
+  background-color: lightsteelblue!important;
   padding: 22px;
-  margin-left: 50px;
+  margin-left: 40px;
   font-weight: bolder;
   line-height: normal;
   font-size: 25px;
@@ -38,12 +28,8 @@
   height: 75px;
   background-color: white;
 }
-#navbarDropdown {color: black}
-.ml-auto {margin-right: 20px;}
-.container {
-  align-content: center;
-  padding-top: 30px;
-  margin-top: 50px;
+#navbarNavDropdown {
+  flex-grow: 1;
 }
 a:not([href]):not([tabindex]){color: white;}
 a:not([href]):not([tabindex]):hover{color: white;}
@@ -58,12 +44,16 @@ a.select-ingredients {color: white;}
   font-size: 25px;
   font-weight: bolder;
   padding: .5rem .9rem;
+  margin-right: 10px;
+  margin-left: 30px;
 }
-.navbar-collapse {
-  padding-left: 1600px;
-}
+
 .btn:hover {
   background-color: lightsteelblue;
+  border-color: lightsteelblue;
+}
+.bg-light {
+  background:white!important;
 }
 /* End Navigation Bar */
 
