@@ -1,14 +1,30 @@
-Ingredient,Aisle
-pimento stuffed olives,Other
-roasted red peppers,Canned and Jarred
-red bell peppers,Produce
-smoked paprika,Spices and Seasonings
-blanched almonds,Other
-green olives,Other
-orange,Produce
-tomato juice,Other
-mussels,Other
-extra virgin olive oil,"Oil, Vinegar, Salad Dressing"
-chorizo sausage,Other
-sherry vinegar,Other
-saffron threads,Other
+Ingredient,Radius
+pimento stuffed olives,44.0
+roasted red peppers,39.0
+red bell peppers,32.0
+pimenton,17.65
+seedless green grape,40.0
+hot smoked paprika,36.5
+club soda,19.35
+vegetable juice,30.0
+dried salted codfish,40.0
+saffron,15.95
+smoked paprika,28.1
+blanched almonds,32.0
+green olives,24.55
+rioja,12.45
+orange,14.15
+tomato juice,24.55
+chorizo,15.95
+mussels,15.95
+fideos,14.15
+sherry wine vinegar,39.0
+extra,12.45
+extra virgin olive oil,44.0
+spanish paprika,30.0
+chorizo sausage,30.0
+manchego cheese,30.0
+serrano ham,22.85
+sherry vinegar,28.1
+saffron threads,30.0
+spanish chorizo,30.0

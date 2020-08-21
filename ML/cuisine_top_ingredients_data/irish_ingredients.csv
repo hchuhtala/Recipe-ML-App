@@ -1,18 +1,30 @@
-Ingredient,Aisle
-yukon gold potato,Produce
-beer,Other
-baking powder,Baking
-russet potatoes,Produce
-raisins,Dried Fruits;Produce;Baking
-wheat bran,Other
-rutabaga,Other
-buttermilk,"Milk, Eggs, Other Dairy"
-steel cut oats,Other
-whole wheat flour,Baking
-stout,Other
-cabbage,Produce
-baking soda,Other
-beef brisket,Other
-potatoes,Other
-corned beef,Other
-whiskey,Other
+Ingredient,Radius
+oatmeal,15.95
+yukon gold potato,34.0
+purpose flour,26.25
+beer,10.75
+baking powder,26.25
+butter,14.15
+russet potatoes,30.0
+raisins,15.95
+fat buttermilk,28.1
+wheat bran,21.05
+rutabaga,17.65
+buttermilk,21.05
+steel cut oats,28.1
+steel,12.45
+color food green,32.0
+whole wheat flour,34.0
+soda bread,21.05
+stout,12.45
+cabbage,15.95
+caraway seeds,26.25
+baking soda,22.85
+irish bacon,22.85
+beef brisket,24.55
+mashed potatoes,30.0
+potatoes,17.65
+irish cream liqueur,39.0
+guinness beer,26.25
+corned beef,22.85
+whiskey,15.95

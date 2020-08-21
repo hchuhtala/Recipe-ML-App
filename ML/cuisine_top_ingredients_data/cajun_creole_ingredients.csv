@@ -1,16 +1,30 @@
-Ingredient,Aisle
-paprika,Spices and Seasonings
-rice,Pasta and Rice
-hot sauce,Condiments
-bay leaves,Spices and Seasonings
-worcestershire sauce,Other
-celery,Produce
-celery,Produce
-celery ribs,Other
-dried thyme,Spices and Seasonings
-okra,Other
-green bell pepper,Produce
-smoked sausage,Other
-creole seasoning,Other
-andouille sausage,Other
-cajun seasoning,Other
+Ingredient,Radius
+shrimp stock,24.55
+louisiana hot sauce,39.0
+ground red pepper,34.0
+paprika,15.95
+grain rice,21.05
+rice,10.75
+tabasco pepper sauce,40.0
+red kidney beans,32.0
+green pepper,24.55
+hot sauce,19.35
+long,10.75
+shrimp,14.15
+bay leaves,21.05
+cayenne pepper,28.1
+worcestershire sauce,40.0
+celery,14.15
+creole mustard,28.1
+red beans,19.35
+celery ribs,22.85
+file powder,22.85
+crawfish,17.65
+celery,14.15
+dried thyme,22.85
+okra,10.75
+green bell pepper,34.0
+smoked sausage,28.1
+creole seasoning,32.0
+andouille sausage,34.0
+cajun seasoning,30.0

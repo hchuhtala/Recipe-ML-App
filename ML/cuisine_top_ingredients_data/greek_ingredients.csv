@@ -1,11 +1,31 @@
-Ingredient,Aisle
-english cucumber,Other
-hummus,Other
-tahini,Other
-lemon juice,Produce
-pita,Other
-cucumber,Produce
-greek yogurt,"Milk, Eggs, Other Dairy"
-dill,Other
-ground lamb,Other
-feta cheese,Other
+Ingredient,Radius
+english cucumber,32.0
+phyllo pastry,26.25
+dried mint flakes,34.0
+kefalotyri,21.05
+hummus,14.15
+fresh oregano,26.25
+chopped fresh mint,36.5
+tzatziki,17.65
+ouzo,10.75
+tahini,14.15
+pita bread rounds,34.0
+phyllo,14.15
+lemon juice,22.85
+fresh lemon juice,34.0
+grape leaves,24.55
+pita bread,21.05
+pita,10.75
+dried oregano,26.25
+pitted kalamata olives,44.0
+greek style plain yogurt,48.0
+kalamata,17.65
+cucumber,17.65
+phyllo dough,24.55
+greek yogurt,24.55
+dill,10.75
+ground lamb,22.85
+greek seasoning,30.0
+fresh dill,21.05
+feta cheese,22.85
+feta cheese crumbles,40.0

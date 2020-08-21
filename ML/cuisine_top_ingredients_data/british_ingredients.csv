@@ -1,7 +1,30 @@
-Ingredient,Aisle
-oats,Cereal
-double cream,Other
-strawberry jam,Other
-currants,Other
-raspberry jam,Other
-low fat milk,"Milk, Eggs, Other Dairy"
+Ingredient,Radius
+oats,10.75
+jam,10.75
+bicarbonate of soda,39.0
+clotted cream,26.25
+currant,15.95
+caster sugar,24.55
+puff pastry,22.85
+sponge cake,22.85
+drippings,19.35
+porridge oats,26.25
+double cream,24.55
+haddock fillets,30.0
+pitted date,22.85
+strawberry jam,28.1
+beef kidney,22.85
+mixed spice,22.85
+currants,17.65
+black treacle,26.25
+malt vinegar,24.55
+raspberry jam,26.25
+low fat milk,24.55
+plain flour,22.85
+mincemeat,19.35
+stilton,15.95
+marmite,15.95
+suet,10.75
+golden syrup,24.55
+stilton cheese,28.1
+beef drippings,28.1

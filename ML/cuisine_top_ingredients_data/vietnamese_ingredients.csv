@@ -1,9 +1,31 @@
-Ingredient,Aisle
-rice vinegar,"Ethnic Foods;Oil, Vinegar, Salad Dressing"
-thai basil,Other
-rice noodles,Other
-coriander,Other
-fresh bean sprouts,Other
-lemongrass,Other
-rice paper,Other
-fish sauce,Ethnic Foods
+Ingredient,Radius
+spring roll wrappers,40.0
+nuoc mam,17.65
+vermicelli noodles,36.5
+maggi,12.45
+mint leaves,22.85
+rice vinegar,24.55
+shallots,17.65
+nuoc nam,17.65
+mung bean sprouts,34.0
+rice stick noodles,36.5
+dried wood ear mushrooms,48.0
+dried rice noodles,36.5
+star anise,21.05
+bird chile,21.05
+tapioca starch,28.1
+bawang goreng,26.25
+nuoc cham,19.35
+thai basil,21.05
+daikon,14.15
+pickled carrots,30.0
+asian fish sauce,32.0
+chile,12.45
+rice noodles,24.55
+coriander,19.35
+fresh bean sprouts,36.5
+lemongrass,21.05
+vietnamese fish sauce,42.1
+rice paper,21.05
+rice vermicelli,30.0
+fish sauce,21.05
