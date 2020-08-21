@@ -64,22 +64,23 @@ def passCuisine():
         print('Incoming..')
         print(request.get_json())  # parse as JSON
         return 'OK', 200
-
     # GET request
     else:
         resp = request.cookies.get('Cuisine')
-        # message = {'greeting':'Hello from Flask in %s!' % cuisine,
-        #             'Cuisine': cuisine }
-        # #return render_template("ingredients.html", jsonify(message))
-        # resp = make_response(render_template("ingredients.html"), 201)
-        # #resp.headers['greeting'] = message['greeting']
-        # resp.headers.extend({'Cuisine' : regionString})
-        #print(resp)
         return resp 
-        #return Response(render_template("ingredients.html"), headers={'Cuisine': cuisine})
-        #return jsonify(message)  # serialize and use JSON headers
 
-    #return render_template("ingredients.html", cuisine=cuisine)
+@app.route("/loadIngredients", methods = ['POST'])
+def loadIngredients():
+    array = request.get_data()
+    resp = make_response()
+    resp.set_cookie('Ingredients', array)
+    print("In loadIngredients cookie is", request.cookies.get('Ingredients'))
+    return resp
+
+@app.route("/getIngredients")
+def getIngredients():
+    resp = request.cookies.get('Ingredients')
+    return resp
 
 #################################################
 # Finish
