@@ -1,0 +1,47 @@
+/* Navigation Bar */
+.navbar-brand{
+    background-color: steelblue;
+    padding: 22px;
+    margin-left: 50px;
+    font-weight: bolder;
+    line-height: normal;
+    font-size: 25px;
+  }
+  #navbarSupportedContent{background-color: white;}
+  .nav-item {align-self: right;}
+  .navbar-light .navbar-brand {color: white;}
+  .navbar {
+    padding: 0;
+    height: 75px;
+    background-color: white;
+  }
+  #navbarDropdown {color: black}
+  .ml-auto {margin-right: 20px;}
+  .container {
+    align-content: center;
+    padding-top: 30px;
+    margin-top: 50px;
+  }
+  /* End Navigation Bar */
+
+/* Recipes page */
+  thead {
+    font-size: 16pt;
+    background-color: lightsalmon;
+    color: white;
+    stroke: none;
+  }
+  
+  .recipe-title {
+    font-size: 16pt;
+    font-weight: bolder;
+  }
+  
+  body {
+    font-size: 16pt;
+  }
+  
+  .table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: bisque;
+  }
+  /* End Recipes page */
