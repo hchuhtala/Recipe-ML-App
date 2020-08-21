@@ -28,9 +28,9 @@
   height: 75px;
   background-color: white;
 }
-#navbarNavDropdown {
+/* #navbarNavDropdown {
   flex-grow: 1;
-}
+} */
 a:not([href]):not([tabindex]){color: white;}
 a:not([href]):not([tabindex]):hover{color: white;}
 a.select-ingredients {color: white;}

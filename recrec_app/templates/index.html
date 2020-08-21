@@ -8,7 +8,7 @@ PUBLIC "-//W3C//DTD HTML 4.01//EN"
     <link rel="icon" 
       type="image/png" 
       href="{{ url_for('static', filename='favicon.ico') }}">
-    <title>Recipe Machine Learning</title>
+    <title>Recipe Recommendations</title>
     
 
     <!-- Leaflet CSS -->
@@ -21,7 +21,7 @@ PUBLIC "-//W3C//DTD HTML 4.01//EN"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Our CSS -->
-    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
      <!-- Navigation Section -->
      <div class="navigation">
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -67,7 +67,6 @@ PUBLIC "-//W3C//DTD HTML 4.01//EN"
 
     <!-- API key -->
     <script type="text/javascript" src="static/js/config.js"></script>
-
 
     <!-- JS -->
     <script type="text/javascript" src="static/js/main.js">

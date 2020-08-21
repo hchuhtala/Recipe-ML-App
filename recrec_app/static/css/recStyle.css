@@ -1,9 +1,15 @@
 
 /* Navigation Bar */
+.ml-auto {margin-right: 20px;}
+.container {
+  align-content: center;
+  padding-top: 30px;
+  margin-top: 50px;
+}
 .navbar-brand{
-  background-color: steelblue;
+  background-color: lightsteelblue!important;
   padding: 22px;
-  margin-left: 50px;
+  margin-left: 40px;
   font-weight: bolder;
   line-height: normal;
   font-size: 25px;
@@ -16,12 +22,8 @@
   height: 75px;
   background-color: white;
 }
-#navbarDropdown {color: black}
-.ml-auto {margin-right: 20px;}
-.container {
-  align-content: center;
-  padding-top: 30px;
-  margin-top: 50px;
+.bg-light {
+  background:white!important;
 }
   /* End Navigation Bar */
 
@@ -38,7 +40,7 @@
     font-weight: bolder;
   }
   
-  body {
+  .table-area {
     font-size: 16pt;
     padding: 0;
     margin: 0;

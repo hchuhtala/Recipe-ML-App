@@ -24,7 +24,7 @@ body {
     width: 100%;
   }
   .navbar-brand{
-    background-color: steelblue;
+    background-color: lightsteelblue!important;
     padding: 22px;
     margin-left: 50px;
     font-weight: bolder;
