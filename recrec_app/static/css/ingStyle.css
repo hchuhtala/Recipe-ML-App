@@ -45,6 +45,26 @@
   padding-top: 30px;
   margin-top: 50px;
 }
+a:not([href]):not([tabindex]){color: white;}
+a:not([href]):not([tabindex]):hover{color: white;}
+a.select-ingredients {color: white;}
+
+.btn-outline-success {
+  color: white;
+  border-color: steelblue;
+}
+.btn {
+  background-color: steelblue;
+  font-size: 25px;
+  font-weight: bolder;
+  padding: .5rem .9rem;
+}
+.navbar-collapse {
+  padding-left: 1600px;
+}
+.btn:hover {
+  background-color: lightsteelblue;
+}
 /* End Navigation Bar */
 
 /* Ingredients page */
