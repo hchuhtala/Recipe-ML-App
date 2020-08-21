@@ -32,7 +32,7 @@ fetch('/getIngredients')
         console.log("clnIngArray: ", clnIngArray);
         let resultLimit = 3;
 
-        let ingredientCall = "https://api.spoonacular.com/recipes/complexSearch?apiKey=" + API_KEY + "&cuisine=" + cuisine + "&includeIngredients=" + clnIngArray + "&sort=popularity&number=" + resultLimit;
+        let ingredientCall = "https://api.spoonacular.com/recipes/complexSearch?apiKey=" + API_KEY_S + "&cuisine=" + cuisine + "&includeIngredients=" + clnIngArray + "&sort=popularity&number=" + resultLimit;
 
         // make API call
         d3.json(ingredientCall, function (jsonData) {
@@ -40,8 +40,8 @@ fetch('/getIngredients')
             let recipeIDs = results.map(result => result.id);
 
             recipeIDs.forEach(function (recipeID) {
-                let recipeCall = "https://api.spoonacular.com/recipes/" + recipeID + "/information?apiKey=" + API_KEY;
-
+                let recipeCall = "https://api.spoonacular.com/recipes/" + recipeID + "/information?apiKey=" + API_KEY_S;
+                console.log(recipeCall);
                 d3.json(recipeCall, function (recipe) {
                     let resultsArray = [];
                     let recipeTitle = recipe.title;
@@ -73,6 +73,9 @@ fetch('/getIngredients')
                                     let imgID = `recipe-image${recipeID}`
                                     let newCell = newRow.append("td").attr("id", imgID);
                                     displayImage(value, imgID);
+                                }
+                                else if (key == "url") {
+                                    let newCell = newRow.append("td").append('a').attr("href",value).text(value);
                                 }
                                 else {
                                     let newCell = newRow.append("td").text(value);
