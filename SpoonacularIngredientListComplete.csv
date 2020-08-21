@@ -1,0 +1,891 @@
+Ingredient,Aisle
+almond extract,Baking
+almond flour,Gluten Free;Health Foods
+almond milk,"Milk, Eggs, Other Dairy"
+almonds,Nuts
+apple,Produce
+arugula,Produce
+avocado,Produce
+bacon,Meat
+baking powder,Baking
+balsamic vinegar,"Oil, Vinegar, Salad Dressing"
+banana,Produce
+bay leaves,Spices and Seasonings
+beef broth,Canned and Jarred
+bell pepper,Produce
+black olives,Canned and Jarred
+blueberries,Produce
+bread,Bakery/Bread
+broccoli,Produce
+brown sugar,Baking
+buttermilk,"Milk, Eggs, Other Dairy"
+butternut squash,Produce
+cabbage,Produce
+canned black beans,Canned and Jarred
+canned tomatoes,Canned and Jarred
+carrots,Produce
+cauliflower,Produce
+celery,Produce
+cheese,Cheese
+cherry,Produce
+cherry tomatoes,Produce
+chicken breasts,Meat
+chicken broth,Canned and Jarred
+chili powder,Spices and Seasonings
+chocolate,Sweet Snacks
+cilantro,Produce;Spices and Seasonings
+coconut,Produce
+coconut flour,Gluten Free;Health Foods;Baking
+coconut milk,"Canned and Jarred;Milk, Eggs, Other Dairy"
+coconut oil,Health Foods;Baking
+corn tortillas,Bakery/Bread;Pasta and Rice;Ethnic Foods
+cornmeal,Ethnic Foods;Baking
+cornstarch,Baking
+cranberries,Produce
+cream cheese,Cheese
+cucumber,Produce
+cumin seeds,Spices and Seasonings
+dark chocolate,Sweet Snacks
+dates,Dried Fruits;Produce
+dried basil,Spices and Seasonings
+dried cranberries,Dried Fruits;Produce
+dried thyme,Spices and Seasonings
+egg vermicelli,Pasta and Rice
+egg whites,"Milk, Eggs, Other Dairy"
+eggplant,Produce
+evaporated milk,Baking
+fish sauce,Ethnic Foods
+flour tortillas,Bakery/Bread;Pasta and Rice;Ethnic Foods
+fresh basil,Produce;Spices and Seasonings
+fresh mint,Produce;Spices and Seasonings
+garlic,Produce
+garlic powder,Spices and Seasonings
+gelatin,Baking
+ginger,Produce;Ethnic Foods;Spices and Seasonings
+goat cheese,Cheese
+graham cracker crumbs,Sweet Snacks;Baking
+grape tomatoes,Produce
+greek yogurt,"Milk, Eggs, Other Dairy"
+green beans,Produce
+green onions,Produce
+ground allspice,Spices and Seasonings
+ground beef,Meat
+ground cinnamon,Spices and Seasonings
+ground cumin,Spices and Seasonings
+ground ginger,Spices and Seasonings
+ground nutmeg,Spices and Seasonings
+half n half,"Milk, Eggs, Other Dairy"
+hot sauce,Condiments
+jalapeno,Canned and Jarred;Produce;Ethnic Foods
+kalamata olives,Canned and Jarred
+kale,Produce
+ketchup,Condiments
+lemon,Produce
+lemon juice,Produce
+lettuce,Produce
+light corn syrup,Baking
+lime,Produce
+low fat milk,"Milk, Eggs, Other Dairy"
+mango,Produce
+maple syrup,Cereal
+marshmallows,Baking
+mayonnaise,Condiments
+molasses,Baking
+mushroom,Produce
+mustard,Condiments
+oats,Cereal
+olive oil,"Oil, Vinegar, Salad Dressing"
+olives,Canned and Jarred
+orange,Produce
+orange juice,Beverages
+oregano,Produce;Spices and Seasonings
+paprika,Spices and Seasonings
+pasta,Pasta and Rice
+peach,Produce
+peanut butter,"Nut butters, Jams, and Honey"
+peas,Produce
+pecan,Nuts;Baking
+pine nuts,Produce;Baking
+pineapple,Produce
+pineapple juice,Beverages
+pistachios,Nuts;Savory Snacks
+plain yogurt,"Milk, Eggs, Other Dairy"
+powdered sugar,Baking
+pumpkin pie spice,Spices and Seasonings
+quinoa,Pasta and Rice;Health Foods
+radishes,Produce
+raisins,Dried Fruits;Produce;Baking
+red onion,Produce
+red pepper flakes,Spices and Seasonings
+red potatoes,Produce
+red wine vinegar,"Oil, Vinegar, Salad Dressing"
+rice,Pasta and Rice
+rice vinegar,"Ethnic Foods;Oil, Vinegar, Salad Dressing"
+rosemary,Spices and Seasonings
+russet potatoes,Produce
+salsa,Pasta and Rice;Ethnic Foods
+seasoned salt,Spices and Seasonings
+sesame oil,Ethnic Foods
+sesame seeds,Ethnic Foods;Spices and Seasonings
+sharp cheddar cheese,Cheese
+shortening,"Oil, Vinegar, Salad Dressing;Baking"
+smoked paprika,Spices and Seasonings
+sour cream,"Milk, Eggs, Other Dairy"
+soy sauce,Ethnic Foods;Condiments
+spinach,Produce
+strawberries,Produce
+sweet onion,Produce
+sweet potato,Produce
+sweetened condensed milk,Baking
+tomato paste,Pasta and Rice
+tomato sauce,Canned and Jarred
+tomatoes,Produce
+turkey,Meat
+vanilla bean,Baking
+vegetable oil,"Oil, Vinegar, Salad Dressing"
+walnuts,Nuts;Savory Snacks;Baking
+whipped topping,"Milk, Eggs, Other Dairy"
+white onion,Produce
+whole wheat flour,Baking
+yellow onion,Produce
+yukon gold potato,Produce
+onion,Produce
+water,Beverages
+black pepper,Spices and Seasonings
+red bell peppers,Produce
+shallot,Produce
+extra virgin olive oil,"Oil, Vinegar, Salad Dressing"
+egg yolk,"Milk, Eggs, Other Dairy"
+green bell pepper,Produce
+shredded cheddar cheese,Cheese
+peppers,Produce
+orange zest,Produce
+cocoa powder,Baking
+low sodium chicken broth,Canned and Jarred
+fresh rosemary,Produce
+cider vinegar,"Oil, Vinegar, Salad Dressing"
+chive & onion cream cheese spread,Cheese
+low sodium soy sauce,Ethnic Foods;Condiments
+whole chicken,Meat
+dark brown sugar,Baking
+cream,"Milk, Eggs, Other Dairy"
+creamy peanut butter,"Nut butters, Jams, and Honey"
+fresh chives,Produce
+broccoli florets,Produce
+white wine,Alcoholic Beverages
+plum tomatoes,Produce
+semi sweet chocolate chips,Baking
+cooked bacon,Meat
+lime zest,Produce
+pumpkin puree,Baking
+yellow bell pepper,Produce
+monterey jack cheese,Cheese
+swiss cheese,Cheese
+cinnamon stick,Spices and Seasonings
+lean ground beef,Meat
+bittersweet chocolate,Sweet Snacks
+lemon peel,Produce
+whipped cream,"Milk, Eggs, Other Dairy"
+plain greek yogurt,"Milk, Eggs, Other Dairy"
+fresh thyme leaves,Produce
+granny smith apples,Produce
+romaine lettuce,Produce
+slivered almonds,Baking
+roasted red peppers,Canned and Jarred
+roma tomatoes,Produce
+lime wedges,Produce
+blue cheese,Cheese
+chicken stock,Canned and Jarred
+unbleached flour,Baking
+margarine,"Milk, Eggs, Other Dairy"
+frozen corn,Frozen
+golden raisins,
+corn kernels,
+skinless boneless chicken thighs,
+white pepper,
+ham,
+white chocolate chips,
+fennel seeds,
+hazelnuts,
+red wine,
+beets,
+ground pork,
+chia seeds,
+dill,
+pie crust,
+poppy seeds,
+peanuts,
+peanut oil,
+bread flour,
+apple juice,
+tortilla chips,
+apple cider,
+graham crackers,
+beer,
+dark chocolate chips,
+quick cooking oats,
+baguette,
+lime juice,
+lemon wedges,
+dry mustard,
+spaghetti,
+unsweetened applesauce,
+shredded chicken,
+english cucumber,
+yogurt,
+sherry vinegar,
+brown rice,
+pork tenderloin,
+hamburger buns,
+parsnip,
+black beans,
+tequila,
+unsweetened shredded coconut,
+corn,
+coffee,
+whole coriander seeds,
+leeks,
+tofu,
+low fat sour cream,
+dry red wine,
+chickpea,
+pork chops,
+sausage,
+beef stock,
+brandy,
+cremini mushrooms,
+red cabbage,
+lettuce leaves,
+tart apple,
+peppercorns,
+berries,
+wine,
+provolone cheese,
+frozen spinach,
+thick-cut bacon,
+canned diced tomatoes,
+peppermint extract,
+oyster sauce,
+maraschino cherries,
+pepperoni,
+french bread,
+flank steak,
+canned kidney beans,
+pesto,
+grapeseed oil,
+anchovies,
+cajun seasoning,
+italian sausages,
+rhubarb,
+cooked ham,
+caramels,
+baby spinach leaves,
+stevia,
+white chocolate,
+seasoning,
+apricots,
+arborio rice,
+roasted peanuts,
+baby carrots,
+shredded cheese,
+oreo cookies,
+cooked quinoa,
+beef,
+pineapple chunks,
+red food coloring,
+dry bread crumbs,
+mustard seeds,
+deli ham,
+prosciutto,
+sweet paprika,
+chicken thighs,
+pork loin chops,
+cooked brown rice,
+potatoes,
+elbow macaroni,
+red grapes,
+cheddar,
+cottage cheese,
+pumpkin,
+asparagus spears,
+dried cherries,
+tortilla,
+chicken wings,
+watercress,
+fresh corn kernels,
+light coconut milk,
+napa cabbage,
+bourbon,
+sunflower seeds,
+linguine,
+medjool dates,
+sweetened shredded coconut,
+lean ground turkey,
+sage,
+cranberry juice,
+cauliflower florets,
+instant yeast,
+avocado oil,
+instant chocolate pudding mix,
+ice cream,
+orange marmalade,
+fontina cheese,
+shredded mexican cheese blend,
+ground chicken,
+turbinado sugar,
+hard cooked eggs,
+steaks,
+tapioca flour,
+nutritional yeast,
+pumpkin seeds,
+fat-free less-sodium chicken broth,
+greens,
+smoked salmon,
+couscous,
+edamame,
+light soy sauce,
+extra firm tofu,
+tomato puree,
+sourdough bread,
+herbs,
+navel oranges,
+pasta sauce,
+rice flour,
+canned pinto beans,
+raspberry jam,
+refried beans,
+dried onion,
+basmati rice,
+root vegetables,
+low fat buttermilk,
+light mayonnaise,
+raw cashews,
+whole kernel corn,
+poultry seasoning,
+dutch process cocoa powder,
+beef chuck roast,
+macadamia nuts,
+pork,
+Pork & Beans,
+fish,
+orange bell pepper,
+okra,
+enchilada sauce,
+diced ham,
+rice noodles,
+chocolate syrup,
+shredded mozzarella,
+cardamom,
+tarragon,
+pepper jack cheese,
+pimientos,
+poblano peppers,
+dry roasted peanuts,
+sage leaves,
+sunflower oil,
+turkey breast,
+white balsamic vinegar,
+grapefruit,
+sea scallops,
+cooked chicken breast,
+orange juice concentrate,
+capers,
+lemon extract,
+rice wine,
+dill pickles,
+plum,
+salad dressing,
+potato starch,
+egg substitute,
+fennel,
+nonfat milk,
+dark sesame oil,
+coconut cream,
+lasagna noodles,
+seasoned bread crumbs,
+wheat germ,
+pomegranate juice,
+pimento stuffed olives,
+raw shrimp,
+blanched almonds,
+pizza crust,
+canned garbanzo beans,
+artichokes,
+asiago cheese,
+fettuccine,
+mat beans,
+chili paste,
+whiskey,
+candy canes,
+nutella,
+onion soup mix,
+cantaloupe,
+onion powder,
+pita,
+fresh herbs,
+dairy free milk,
+vanilla yogurt,
+biscuits,
+english muffin,
+cereal,
+cookies,
+red velvet cookie,
+salami,
+spicy brown mustard,
+canned tuna,
+ground flaxseed,
+old bay seasoning,
+sherry,
+tea bags,
+taco seasoning mix,
+double cream,
+butterscotch chips,
+crisp rice cereal,
+plain nonfat yogurt,
+acorn squash,
+pancetta,
+tilapia fillets,
+ground lamb,
+whole cranberry sauce,
+toffee bits,
+polenta,
+italian bread,
+fresh corn,
+green food coloring,
+coconut extract,
+canned white beans,
+vanilla wafers,
+clams,
+sausage links,
+pearl onions,
+clam juice,
+mussels,
+slaw dressing,
+croutons,
+granulated garlic,
+currants,
+processed american cheese,
+silken tofu,
+chicken bouillon granules,
+water-packed tuna,
+popcorn,
+rum extract,
+bok choy,
+rye bread,
+hash brown potatoes,
+baby bok choy,
+cotija cheese,
+italian cheese blend,
+chocolate milk,
+peppermint baking chips,
+dried dill,
+lamb,
+deli turkey,
+chicken sausage,
+steel cut oats,
+baby corn,
+thai red curry paste,
+whole-grain mustard,
+beef brisket,
+salsa verde,
+stock,
+roast beef,
+sirloin steak,
+ritz crackers,
+chicken drumsticks,
+oil packed sun dried tomatoes,
+soy milk,
+hot dog,
+light cream cheese,
+clove,
+marjoram,
+dried porcini mushrooms,
+balsamic glaze,
+liquid stevia,
+green grapes,
+kiwis,
+orzo,
+tuna,
+nectarine,
+chocolate chip cookies,
+black sesame seeds,
+red apples,
+cardamom pods,
+orange liqueur,
+tahini,
+creole seasoning,
+strawberry jam,
+honey mustard,
+fried onions,
+gouda cheese,
+halibut fillet,
+collard greens,
+coconut butter,
+seasoned rice vinegar,
+rice krispies cereal,
+cannellini beans,
+garlic salt,
+chicken tenders,
+cheese tortellini,
+whole wheat tortillas,
+blood orange,
+cinnamon sugar,
+light olive oil,
+summer squash,
+wine vinegar,
+jasmine rice,
+angel hair pasta,
+farro,
+swiss chard,
+potato chips,
+rotini pasta,
+hemp seeds,
+granola,
+chicken legs,
+eggnog,
+thai chiles,
+water chestnuts,
+5 spice powder,
+meat,
+pork shoulder,
+seeds,
+corned beef,
+pico de gallo,
+andouille sausage,
+meatballs,
+tomatillos,
+cooked pasta,
+flax seeds,
+lemon curd,
+pickles,
+lemon pepper,
+canned mushrooms,
+skim vanilla greek yogurt,
+sukrin sweetener,
+ramen noodles,
+smoked sausage,
+pecan pieces,
+peanut butter cups,
+chocolate ice cream,
+port,
+squash,
+coconut water,
+penne,
+red delicious apples,
+pork butt,
+non-fat greek yogurt,
+pear liqueur,
+sparkling wine,
+chestnuts,
+oysters,
+pastry flour,
+canned red kidney beans,
+miso,
+pinto beans,
+cod,
+brie,
+bulgur,
+corn oil,
+vanilla extract,
+espresso,
+shiitake mushroom caps,
+chicken pieces,
+fresh figs,
+irish cream,
+parsley flakes,
+cream cheese block,
+radicchio,
+crabmeat,
+chili peppers,
+tomato juice,
+kaffir lime leaves,
+gorgonzola,
+top round steak,
+beef tenderloin,
+seasoning blend,
+crystallized ginger,
+grain blend,
+fudge topping,
+palm sugar,
+papaya,
+candy melts,
+mandarin oranges,
+angostura bitters,
+fresh fruit,
+hummus,
+ancho chiles,
+corn flour,
+peanut butter chips,
+food dye,
+truffle oil,
+lemongrass,
+saltine crackers,
+chicken bouillon,
+lower sodium beef broth,
+skim milk ricotta,
+turnips,
+great northern beans,
+ginger paste,
+meyer lemon juice,
+quinoa flour,
+vinaigrette,
+vodka,
+wheat bran,
+chocolate wafer cookies,
+raspberries,
+instant lemon pudding mix,
+marsala wine,
+bacon fat,
+nut butter,
+sandwich bun,
+courgettes,
+jicama,
+vanilla instant pudding mix,
+shells,
+canned white cannellini beans,
+celery seed,
+short grain rice,
+whole allspice berries,
+hershey's kisses brand milk chocolates,
+champagne,
+gnocchi,
+cooked wild rice,
+pork belly,
+corn bread mix,
+cow pea,
+garlic paste,
+reduced fat shredded cheddar cheese,
+cornbread,
+escarole,
+fish stock,
+vegan chocolate chips,
+polish sausage,
+gin,
+low fat ricotta cheese,
+round steak,
+sauerkraut,
+apple pie spice,
+deep dish pie crust,
+short ribs,
+cauliflower rice,
+chocolate chunks,
+harissa,
+vegan cheese,
+short pasta,
+stew meat,
+soy protein powder,
+tomato soup,
+celery ribs,
+shortbread cookies,
+winter squash,
+plantain,
+gravy,
+ready-to-serve Asian fried rice,
+grill cheese,
+ground veal,
+sugar snap peas,
+celery salt,
+portabella mushrooms,
+sprouts,
+cola,
+instant coffee powder,
+vanilla essence,
+soda water,
+refrigerated pizza dough,
+ricotta salata,
+chile garlic sauce,
+mint chutney,
+real bacon recipe pieces,
+wraps,
+prunes,
+vegan margarine,
+malt drink mix,
+ground pork sausage,
+fresh bean sprouts,
+farfalle,
+mascarpone,
+pomegranate seeds,
+green olives,
+shredded coconut,
+cream of chicken soup,
+white cheddar,
+cheese curds,
+chili sauce,
+fire roasted tomatoes,
+dried rubbed sage,
+rice paper,
+slaw mix,
+coconut aminos,
+stout,
+ground coriander seeds,
+live lobster,
+sheeps milk cheese,
+baking soda,
+candy coating,
+pork roast,
+serrano chile,
+dijon mustard,
+refrigerated sugar cookie dough,
+ahi tuna,
+rutabaga,
+amaretto,
+cornish hens,
+coriander,
+italian seasoning,
+kahlua,
+paneer,
+salmon fillet,
+guacamole,
+unsweetened coconut milk,
+whipping cream,
+matcha tea,
+rib tips,
+diet pop,
+panko,
+feta cheese,
+chicken base,
+alfredo pasta sauce,
+white wine vinegar,
+pineapple in juice,
+chipotle chilies,
+minute rice,
+corn flakes cereal,
+jimmies,
+parsley,
+cooked polenta,
+grand marnier,
+cinnamon roll,
+watermelon chunks,
+celery root,
+pot roast,
+sesame seed hamburger buns,
+dry milk,
+snapper fillets,
+caraway seed,
+cinnamon swirl bread,
+green chili pepper,
+white bread,
+cheese soup,
+condensed cream of celery soup,
+dried chorizo,
+ginger-garlic paste,
+long-grain rice,
+dried tomatoes,
+hoisin sauce,
+cognac,
+summer savory,
+fat free mayo,
+strawberry jello,
+pecorino,
+queso fresco,
+snow peas,
+lump crab,
+gruyere,
+pork links,
+baby-back ribs,
+cheese dip,
+cocoa nibs,
+ginger ale,
+orange oil,
+cracked pepper,
+garam masala,
+fudge,
+sub rolls,
+blackberries,
+ranch dressing,
+sweet chilli sauce,
+liquor,
+bbq sauce,
+ranch dressing mix,
+top blade steak,
+dessert wine,
+chana dal,
+rye meal,
+vanilla protein powder,
+boneless skinless chicken breast,
+marinara sauce,
+butterhead lettuce,
+cream of tartar,
+dried apricots,
+erythritol,
+miracle whip,
+duck fat,
+rice milk,
+creamed corn,
+sugar syrup,
+black bean sauce,
+ladyfingers,
+sriracha sauce,
+tamari,
+vermouth,
+pickle relish,
+mirin,
+rice syrup,
+mandarin orange sections,
+marshmallow fluff,
+fenugreek seeds,
+vanilla bean paste,
+corn chips,
+parmigiano reggiano,
+red grapefruit juice,
+stuffing,
+sweet pickle relish,
+teriyaki sauce,
+nori,
+bamboo shoots,
+brownie mix,
+instant espresso powder,
+leg of lamb,
+low-sodium chicken stock,
+rotisserie chicken,
+smooth peanut butter,
+sweet pickle juice,
+whole star anise,
+baby bell peppers,
+brown rice flour,
+dark chocolate candy bars,
+garbanzo bean flour,
+milk chocolate chips,
+red pepper powder,
+caesar dressing,
+caramel sauce,
+ground ancho chili,
+rub,
+vegetable broth,
+canned green chiles,
+chipotle peppers in adobo,
+white whole wheat flour,
+worcestershire sauce,
+breakfast links,
+brussel sprouts,
+gingersnap cookies,
+horseradish,
+new potatoes,
+adobo sauce,
+masa harina,
+scotch bonnet chili,
+sweetened coconut,
+thai basil,
+agave nectar,
+apple butter spread,
+herbes de provence,
+part-skim mozzarella cheese,
+pasta salad mix,
+spaghetti squash,
+Top Sirloin,
+unsmoked back bacon,
+chipotle chiles in adobo,
+chocolate sandwich cookies,
+chorizo sausage,
+country bread,
+jelly,
+lean pork tenderloin,
+liquid smoke,
+macaroni and cheese mix,
+madras curry powder,
+oat flour,
+roasted chicken,
+saffron threads,
+spelt flour,
+vegetarian bacon,
+whole wheat bread,
