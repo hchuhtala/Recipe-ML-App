@@ -39,7 +39,7 @@ var cuisineColor = {
 };
 
 function onEachFeature(feature, layer) {
-    layer.bindPopup ("Cuisine Type: " + feature.properties.name);
+    layer.bindPopup (`<a href='/ingredients/${feature.properties.name}'>Cuisine Type:  ${feature.properties.name}</a>`);//Put a link to ingredients?
     layer.setStyle({
         'fillColor': cuisineColor[feature.properties.name],
         'fillOpacity' : 0.4,
@@ -59,7 +59,16 @@ function onEachFeature(feature, layer) {
         });
         this.popupclose;
     });
+
+    // layer.on('click', function(){
+    //     // window.open() returns the new window's window object
+    //     window.open('/ingredients');
+    // })
 };
+
+
+
+
 // // Use this link to get the geojson data.
 var link = "static/resources/custom.geojson";
 

@@ -8,7 +8,8 @@ from flask import (
     render_template,
     jsonify,
     request,
-    redirect)
+    redirect,
+    make_response)
 
 #################################################
 # Flask Setup
@@ -16,7 +17,7 @@ from flask import (
 app = Flask(__name__)
 
 #################################################
-# Routes
+# Basic Routes
 #################################################
 # create route that renders index.html template
 @app.route("/")
@@ -29,9 +30,46 @@ def background():
 
 @app.route("/ingredients")
 def ingredients():
+    print('inside /ingredients route')
     return render_template("ingredients.html")
 
+@app.route("/recipes")
+def recipes():
+    return render_template("recipes.html")
+
+@app.route("/notebook")
+def notebook():
+    return redirect("https://nbviewer.jupyter.org/github/hchuhtala/Recipe-ML-App/blob/master/ML/Data%20Cleaning%20and%20Exploration.ipynb")
+
 #@app.add_url_rule('/favicon.ico', redirect_to=url_for('static', filename='favicon.ico'))
+
+#################################################
+# Data Routes
+#################################################
+@app.route("/ingredients/<cuisine>")
+
+def passCuisine(cuisine):
+    print('inside passCuisine route')
+     # POST request
+    if request.method == 'POST':
+        print('Incoming..')
+        print(request.get_json())  # parse as JSON
+        return 'OK', 200
+
+    # GET request
+    else:
+        message = {'greeting':'Hello from Flask in %s!' % cuisine,
+                    'Cuisine': cuisine }
+        #return render_template("ingredients.html", jsonify(message))
+        resp = make_response(render_template("ingredients.html"), 201)
+        #resp.headers['greeting'] = message['greeting']
+        resp.headers['Cuisine'] = cuisine
+        #print(resp)
+        return resp 
+        #return Response(render_template("ingredients.html"), headers={'Cuisine': cuisine})
+        #return jsonify(message)  # serialize and use JSON headers
+
+    #return render_template("ingredients.html", cuisine=cuisine)
 
 #################################################
 # Finish

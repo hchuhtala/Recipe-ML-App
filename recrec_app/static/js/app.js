@@ -2,6 +2,28 @@ makeResponsive();
 
 d3.select(window).on("resize", makeResponsive);
 
+//Testing passing cuisine variable from flask/////////////////////////////////
+// GET is the default method, so we don't need to set it
+fetch('/ingredients/<cuisine>')
+    .then(function (response) {
+        return response.text();
+    }).then(function (text) {
+        console.log('GET response text 1:');
+        console.log(text); // Print the greeting as text
+    });
+
+// Send the same request
+fetch('/ingredients/<cuisine>')
+    .then(function (response) {
+        return response.headers; // But parse it as JSON this time
+    })  
+    .then(function (json) {
+        console.log('GET response as JSON 2:');
+        console.log(json); // Here’s our JSON object
+    })
+//end Testing passing cuisine variable from flask/////////////////////////////////
+
+
 function makeResponsive() {
   let svgArea = d3.select("body").select("svg");
 
@@ -53,7 +75,7 @@ function makeResponsive() {
     .range(["#8FBC8B", "#F0E68C", "#FFB6C1", "#FFF8DC", "#D3D3D3", "#FFFACD", "#F08080", "#FFA07A", "#D8BFD8", "#B0E0E6", "#F5DEB3", "#DB7093", "#BC8F8F", "#D2B48C", "#FFD700"]);
 
 
-  d3.text("static/resources/ingredientData.csv", function (error, text) {
+  d3.text("../static/resources/ingredientData.csv", function (error, text) {
     if (error) throw error;
     let colNames = "text,size,group\n" + text;
     let data = d3.csv.parse(colNames);

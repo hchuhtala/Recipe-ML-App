@@ -6,7 +6,7 @@
 	<title>Recipe Recommendations</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
@@ -19,7 +19,7 @@
 	<div class="chart">
 	</div>
 	<script src="https://d3js.org/d3.v3.min.js"></script>
-	<script type="text/javascript" src="static\js\app.js"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"></script>
 </body>
 
 </html>
