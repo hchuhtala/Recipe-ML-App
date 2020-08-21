@@ -5,17 +5,12 @@
 	<meta charset="UTF-8">
 	<title>Recipe Recommendations</title>
 
-	<!-- Leaflet CSS -->
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
-		integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
-		crossorigin="" />
-
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 	<!-- Our CSS -->
-	<link rel="stylesheet" type="text/css" href="static/css/ingStyle.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/ingStyle.css') }}">
 
 	<!-- Navigation Section -->
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
