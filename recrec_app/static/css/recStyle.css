@@ -1,27 +1,28 @@
+
 /* Navigation Bar */
 .navbar-brand{
-    background-color: steelblue;
-    padding: 22px;
-    margin-left: 50px;
-    font-weight: bolder;
-    line-height: normal;
-    font-size: 25px;
-  }
-  #navbarSupportedContent{background-color: white;}
-  .nav-item {align-self: right;}
-  .navbar-light .navbar-brand {color: white;}
-  .navbar {
-    padding: 0;
-    height: 75px;
-    background-color: white;
-  }
-  #navbarDropdown {color: black}
-  .ml-auto {margin-right: 20px;}
-  .container {
-    align-content: center;
-    padding-top: 30px;
-    margin-top: 50px;
-  }
+  background-color: steelblue;
+  padding: 22px;
+  margin-left: 50px;
+  font-weight: bolder;
+  line-height: normal;
+  font-size: 25px;
+}
+#navbarSupportedContent{background-color: white;}
+.nav-item {align-self: right;}
+.navbar-light .navbar-brand {color: white;}
+.navbar {
+  padding: 0;
+  height: 75px;
+  background-color: white;
+}
+#navbarDropdown {color: black}
+.ml-auto {margin-right: 20px;}
+.container {
+  align-content: center;
+  padding-top: 30px;
+  margin-top: 50px;
+}
   /* End Navigation Bar */
 
 /* Recipes page */
@@ -39,6 +40,8 @@
   
   body {
     font-size: 16pt;
+    padding: 0;
+    margin: 0;
   }
   
   .table-striped>tbody>tr:nth-of-type(odd) {
