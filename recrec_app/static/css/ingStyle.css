@@ -1,0 +1,53 @@
+/* Navigation Bar */
+.select-ingredients{
+  background-color: "#bc7882";
+  padding: 22px;
+  margin-left: 50px;
+  font-weight: bolder;
+  line-height: normal;
+  font-size: 25px;
+  
+}
+a:not([href]):not([tabindex]){color: white;}
+a:not([href]):not([tabindex]):hover{color: white;}
+a.select-ingredients {color: white;}
+#navbarSupportedContent{background-color: white;}
+.nav-item {align-self: right;}
+.navbar {
+  padding: 0;
+  height: 75px;
+  background-color: white;
+}
+.btn-outline-success {
+  color: white;
+  border-color: steelblue;
+}
+.btn {
+  background-color: steelblue;
+  font-size: 25px;
+  font-weight: bolder;
+  padding: .5rem .9rem;
+}
+.navbar-collapse {
+  padding-left: 1600px;
+}
+.btn:hover {
+  background-color: lightsteelblue;
+}
+/* End Navigation Bar */
+
+/* Ingredients page */
+text {
+    font: 13px "Calibri";
+    font-weight: bolder;
+  }
+  
+  g.text:hover {
+    color: white;
+  }
+  
+  circle {
+    opacity: .6;
+    stroke-width: 1;
+  }
+  /* End Ingredients Page */
