@@ -20,22 +20,22 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 }).addTo(myMap);
 //["7400b8","6930c3","5e60ce","5390d9","4ea8de","48bfe3","56cfe1","64dfdf","72efdd","80ffdb"]
 var cuisineColor = {
-    "Vietnam" : "red",
-    "Italy" : "#51f374",
-    "France" : "#6bd1e0",
-    "Spain" : "#c6e759",
-    "India" : "#44c18b",
-    "China" : "#8e47b5",
-    "Korea" : "#c6e759",
-    "Thailand" : "#34ebeb",
-    "Japan" : "#5f74ee",
-    "United States" : "#6bd1e0",
-    "Mexico" : "#44c18b",
-    "Greece" : "#df2a17",
-    "Southern" : "yellow",
+    "Vietnamese" : "red",
+    "Italian" : "#51f374",
+    "French" : "#6bd1e0",
+    "Spanish" : "#c6e759",
+    "Indian" : "#44c18b",
+    "Chinese" : "#8e47b5",
+    "Korean" : "#c6e759",
+    "Thai" : "#34ebeb",
+    "Japanese" : "#5f74ee",
+    "US" : "#6bd1e0",
+    "Mexican" : "#44c18b",
+    "Greek" : "#df2a17",
+    "Southern_US" : "yellow",
     "Latin America" : "#8e90b7",
-    "Louisiana Creole" : "red",
-    "United Kingdom" : "#730ae4"
+    "Cajun_Creole" : "red",
+    "British" : "#730ae4"
 };
 
 function onEachFeature(feature, layer) {
