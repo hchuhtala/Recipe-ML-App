@@ -7,15 +7,47 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/ingStyle.css') }}">
-</head>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="{{ url_for('home') }}">Home</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-<body>
-	<div class="navbar navbar-expand-lg">
 		<a class="select-ingredients">Select Your Ingredients...</a>
+
 		<div class="collapse navbar-collapse" id="navbarNavDropDown">
 			<button class="btn btn-outline-success my-2 my-sm-0 nav-item" type="submit">View Recipes</button>
 		</div>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="{{ url_for('background') }}">Project Background</a>
+					</li>
+				</ul>
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="{{ url_for('ingredients') }}">Ingredients</a>
+					</li>
+				</ul>
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="{{ url_for('recipes') }}">Recipes</a>
+					</li>
+				</ul>
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="{{ url_for('notebook') }}">Notebook</a>
+					</li>
+				</ul>
+		</div>
+	</nav>
 	</div>
+</head>
+
+<body>
 	<div class="chart">
 	</div>
 	<script src="https://d3js.org/d3.v3.min.js"></script>
