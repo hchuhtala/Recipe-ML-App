@@ -4,7 +4,7 @@ d3.select(window).on("resize", makeResponsive);
 
 //Testing passing cuisine variable from flask/////////////////////////////////
 // GET is the default method, so we don't need to set it
-fetch('/ingredients/<cuisine>')
+fetch('/passCuisine')
     .then(function (response) {
         return response.text();
     }).then(function (text) {
@@ -12,15 +12,15 @@ fetch('/ingredients/<cuisine>')
         console.log(text); // Print the greeting as text
     });
 
-// Send the same request
-fetch('/ingredients/<cuisine>')
-    .then(function (response) {
-        return response.headers; // But parse it as JSON this time
-    })  
-    .then(function (json) {
-        console.log('GET response as JSON 2:');
-        console.log(json); // Here’s our JSON object
-    })
+// // Send the same request
+// fetch('/ingredients/<cuisine>')
+//     .then(function (response) {
+//         return response.headers.get('Cuisine'); // But parse it as JSON this time
+//     })  
+//     .then(function (json) {
+//         console.log('GET response as JSON 2:');
+//         console.log(json); // Here’s our JSON object
+//     })
 //end Testing passing cuisine variable from flask/////////////////////////////////
 
 

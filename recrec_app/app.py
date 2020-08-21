@@ -9,7 +9,8 @@ from flask import (
     jsonify,
     request,
     redirect,
-    make_response)
+    make_response,
+    g)
 
 #################################################
 # Flask Setup
@@ -47,9 +48,17 @@ def notebook():
 # Data Routes
 #################################################
 @app.route("/ingredients/<cuisine>")
+def loadCuisine(cuisine):
+    resp = make_response(render_template("ingredients.html"))
+    resp.set_cookie('Cuisine', cuisine)
+    print("In loadCuisine cookie is", request.cookies.get('Cuisine'))
+    return resp
 
-def passCuisine(cuisine):
+
+@app.route("/passCuisine")
+def passCuisine():
     print('inside passCuisine route')
+    #regionString = cuisine
      # POST request
     if request.method == 'POST':
         print('Incoming..')
@@ -58,12 +67,13 @@ def passCuisine(cuisine):
 
     # GET request
     else:
-        message = {'greeting':'Hello from Flask in %s!' % cuisine,
-                    'Cuisine': cuisine }
-        #return render_template("ingredients.html", jsonify(message))
-        resp = make_response(render_template("ingredients.html"), 201)
-        #resp.headers['greeting'] = message['greeting']
-        resp.headers['Cuisine'] = cuisine
+        resp = request.cookies.get('Cuisine')
+        # message = {'greeting':'Hello from Flask in %s!' % cuisine,
+        #             'Cuisine': cuisine }
+        # #return render_template("ingredients.html", jsonify(message))
+        # resp = make_response(render_template("ingredients.html"), 201)
+        # #resp.headers['greeting'] = message['greeting']
+        # resp.headers.extend({'Cuisine' : regionString})
         #print(resp)
         return resp 
         #return Response(render_template("ingredients.html"), headers={'Cuisine': cuisine})
