@@ -2,43 +2,44 @@
 <html lang="en-us">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Recipe Recommendations</title>
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<meta charset="UTF-8">
+	<title>Recipe Recommendations</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/recStyle.css') }}">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="{{ url_for('home') }}">Home</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		</div>
 
-    <!-- Our CSS -->
-    <link rel="stylesheet" type="text/css" href="static\style\style.css">
-     <!-- Navigation Section -->
-     <div class="navigation">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" style="background-color: lightgray;" href="index.html">Home</a>
-          <button class="navbar-toggler border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  Pages
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="{{ url_for('recipes') }}">Recipes</a>
-                  <a class="dropdown-item" href="{{ url_for('ingredients') }}">Ingredients</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="{{ url_for('background') }}">Background</a>
-              </li>
-    
-            </ul>
-          </div>
-        </nav>
-      </div>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="{{ url_for('background') }}">Project Background</a>
+					</li>
+				</ul>
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="{{ url_for('ingredients') }}">Ingredients</a>
+					</li>
+				</ul>
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="{{ url_for('recipes') }}">Recipes</a>
+					</li>
+				</ul>
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="{{ url_for('notebook') }}">Notebook</a>
+					</li>
+				</ul>
+		</div>
+	</nav>
+	</div>
 </head>
 <div class="col-md-12">
   <div id="table-area" class="">

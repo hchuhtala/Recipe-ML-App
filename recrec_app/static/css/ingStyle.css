@@ -1,23 +1,54 @@
 /* Navigation Bar */
 .select-ingredients{
-  background-color: "#bc7882";
+  background-color: steelblue;
   padding: 22px;
   margin-left: 50px;
   font-weight: bolder;
   line-height: normal;
   font-size: 25px;
-  
 }
-a:not([href]):not([tabindex]){color: white;}
-a:not([href]):not([tabindex]):hover{color: white;}
-a.select-ingredients {color: white;}
 #navbarSupportedContent{background-color: white;}
 .nav-item {align-self: right;}
+.navbar-light .select-ingredients {color: white;}
 .navbar {
   padding: 0;
   height: 75px;
   background-color: white;
 }
+#navbarDropdown {color: black}
+.ml-auto {margin-right: 20px;}
+.container {
+  align-content: center;
+  padding-top: 30px;
+  margin-top: 50px;
+}
+.navbar-brand{
+  background-color: steelblue;
+  padding: 22px;
+  margin-left: 50px;
+  font-weight: bolder;
+  line-height: normal;
+  font-size: 25px;
+}
+#navbarSupportedContent{background-color: white;}
+.nav-item {align-self: right;}
+.navbar-light .navbar-brand {color: white;}
+.navbar {
+  padding: 0;
+  height: 75px;
+  background-color: white;
+}
+#navbarDropdown {color: black}
+.ml-auto {margin-right: 20px;}
+.container {
+  align-content: center;
+  padding-top: 30px;
+  margin-top: 50px;
+}
+a:not([href]):not([tabindex]){color: white;}
+a:not([href]):not([tabindex]):hover{color: white;}
+a.select-ingredients {color: white;}
+
 .btn-outline-success {
   color: white;
   border-color: steelblue;
