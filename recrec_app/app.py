@@ -79,7 +79,7 @@ def loadIngredients():
 
 @app.route("/getIngredients")
 def getIngredients():
-    resp = request.cookies.get('Ingredients')
+    resp = request.cookies.get()
     return resp
 
 #################################################

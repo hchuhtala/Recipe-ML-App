@@ -18,7 +18,7 @@ fetch('/getIngredients')
         return response.text();
     }).then(function (text) {
         ingredients = text;
-        console.log('GET response ingredients:');
+        console.log('GET response full cookie?:');
         console.log(ingredients); // Print the greeting as text
         return ingredients;
     }).then(function (ingredientsArray) {
