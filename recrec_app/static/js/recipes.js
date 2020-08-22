@@ -11,26 +11,29 @@ function getIngredients() {
         });
 }
 
-// This will be the array from the ingredients page
+// This will be the array from the ingredients page, AND cuisine from map page
 //let ingredientsArray = ["tomatoes", "garlic", "chicken breasts"];
 fetch('/getIngredients')
     .then(function (response) {
         return response.text();
     }).then(function (text) {
         ingredients = text;
-        console.log('GET response ingredients:');
-        console.log(ingredients); // Print the greeting as text
         return ingredients;
     }).then(function (ingredientsArray) {
         ingredientsArray = ingredientsArray.split(",")
-        console.log("ingredientsArray ", ingredientsArray);
-        console.log("ingredientsArray typeof", typeof ingredientsArray)
+        // console.log("ingredientsArray ", ingredientsArray);
+        // console.log("ingredientsArray typeof", typeof ingredientsArray)
         // This will be cuisine from the main page
-        let cuisine = "Italian";
+        let cuisine = ingredientsArray.shift().toString();
+        let API_KEY_S = ingredientsArray.pop().toString();
+        //console.log("key in recipes: ",API_KEY_S)
+        // console.log("Cuisine from array: ", cuisine);
+        // console.log('Ingredients:');
+        // console.log(ingredientsArray); 
 
         let clnIngArray = ingredientsArray.map(ingredient => ingredient.replace(" ", "+"));
         console.log("clnIngArray: ", clnIngArray);
-        let resultLimit = 3;
+        let resultLimit = 6;
 
         let ingredientCall = "https://api.spoonacular.com/recipes/complexSearch?apiKey=" + API_KEY_S + "&cuisine=" + cuisine + "&includeIngredients=" + clnIngArray + "&sort=popularity&number=" + resultLimit;
 

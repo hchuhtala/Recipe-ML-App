@@ -12,6 +12,8 @@ from flask import (
     make_response,
     g)
 
+s_key = os.environ.get('API_KEY_S')
+#print("S Key ",s_key)
 #################################################
 # Flask Setup
 #################################################
@@ -31,7 +33,7 @@ def background():
 
 @app.route("/ingredients")
 def ingredients():
-    print('inside /ingredients route')
+    #print('inside /ingredients route')
     return render_template("ingredients.html")
 
 @app.route("/recipes")
@@ -47,17 +49,27 @@ def notebook():
 #################################################
 # Data Routes
 #################################################
+#Serve API key via cookie to config.js
+@app.route("/key")
+def serveKey():
+    resp = request.cookies.get('S_Key')
+    #print("key resp ",resp)
+    return resp
+
+#Open ingredients page from map, and create cookie with cuisine selection
 @app.route("/ingredients/<cuisine>")
 def loadCuisine(cuisine):
     resp = make_response(render_template("ingredients.html"))
+    resp.set_cookie('S_Key',s_key)
     resp.set_cookie('Cuisine', cuisine)
-    print("In loadCuisine cookie is", request.cookies.get('Cuisine'))
+    #print("In loadCuisine key resp",resp.set_cookie('S_Key',s_key))
+    #print("In loadCuisine cookie is", request.cookies.get('Cuisine'))
     return resp
 
-
+#Supply cuisine from map page to ingredients page app.js
 @app.route("/passCuisine")
 def passCuisine():
-    print('inside passCuisine route')
+    #print('inside passCuisine route')
     #regionString = cuisine
      # POST request
     if request.method == 'POST':
@@ -69,17 +81,23 @@ def passCuisine():
         resp = request.cookies.get('Cuisine')
         return resp 
 
+#Receive array of ingredients from ingredients page app.js
 @app.route("/loadIngredients", methods = ['POST'])
 def loadIngredients():
     array = request.get_data()
     resp = make_response()
     resp.set_cookie('Ingredients', array)
-    print("In loadIngredients cookie is", request.cookies.get('Ingredients'))
+    #print("In loadIngredients cookie is", request.cookies.get('Ingredients'))
     return resp
 
+#Supply ingredients array AND cuisine to recipe.js
 @app.route("/getIngredients")
 def getIngredients():
-    resp = request.cookies.get('Ingredients')
+    ing = str(request.cookies.get('Ingredients'))
+    cus = str(request.cookies.get('Cuisine'))
+    key = str(request.cookies.get('S_Key'))
+    resp = cus + "," + ing + "," + key
+    #print("resp in getIngredients: ", resp)
     return resp
 
 #################################################
