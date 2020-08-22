@@ -96,7 +96,7 @@ def getIngredients():
     ing = request.cookies.get('Ingredients')
     cus = request.cookies.get('Cuisine')
     key = request.cookies.get('S_Key')
-    resp = cus + "," + ing + "," + key
+    resp = cus + "," + ing + "," + str(key)
     #print("resp in getIngredients: ", resp)
     return resp
 
