@@ -93,10 +93,10 @@ def loadIngredients():
 #Supply ingredients array AND cuisine to recipe.js
 @app.route("/getIngredients")
 def getIngredients():
-    ing = request.cookies.get('Ingredients')
-    cus = request.cookies.get('Cuisine')
-    key = request.cookies.get('S_Key')
-    resp = cus + "," + ing + "," + str(key)
+    ing = str(request.cookies.get('Ingredients'))
+    cus = str(request.cookies.get('Cuisine'))
+    key = str(request.cookies.get('S_Key'))
+    resp = cus + "," + ing + "," + key
     #print("resp in getIngredients: ", resp)
     return resp
 
