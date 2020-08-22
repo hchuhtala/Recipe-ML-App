@@ -117,8 +117,8 @@ function makeResponsive() {
       cuisine = cuisine.toLowerCase();
       cuisine = cuisine.replace(" ", "_");
       console.log("cuisine after then: ", cuisine);
-      d3.text(`../static/resources/ingredientData.csv`, function (error, text) {
-      // d3.text(`../static/resources/${cuisine}_ingredients.csv`, function (error, text) {
+      //d3.text(`../static/resources/ingredientData.csv`, function (error, text) {
+      d3.text(`../static/resources/${cuisine}_ingredients.csv`, function (error, text) {
         if (error) throw error;
         let colNames = "text,size,group\n" + text;
         let data = d3.csv.parse(colNames);
