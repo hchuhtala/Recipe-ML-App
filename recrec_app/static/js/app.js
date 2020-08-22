@@ -86,8 +86,8 @@ function makeResponsive() {
   // For legend
   let legendArea = d3.select("svg").append("g")
     .attr("transform", "translate(10,-90)");
-  let legendNames = ["Produce", "Baking", "Spices and Seasonings", "Milk, Eggs, Other Dairy", "Canned and Jarred", "Cheese", "Meat", "Oil, Vinegar, Salad Dressing", "Condiments", "Ethnic Foods", "Pasta and Rice", "Sweet Snacks & Nuts", "Beverages", "Bakery/Bread", "Nut butters, Jams, and Honey"];
-  let legendColors = ["#8FBC8B", "#F0E68C", "#FFB6C1", "#FFF8DC", "#D3D3D3", "#FFFACD", "#F08080", "#FFA07A", "#D8BFD8", "#B0E0E6", "#F5DEB3", "#DB7093", "#BC8F8F", "#D2B48C", "#FFD700"];
+  let legendNames = ["Alcoholic Beverages","Bakery/Bread","Baking","Beverages","Canned and Jarred","Cereal","Cheese","Condiments","Ethnic Foods","Frozen/Refridgerated","Meat","Milk, Eggs, Other Dairy","Nut butters, Jams, and Honey","Nuts/Dried Fruits","Oil, Vinegar, Salad Dressing","Pasta and Rice","Produce","Seafood","Spices and Seasonings"];
+  let legendColors = ["#BC8F8F","#D2B48C","#F0E68C","#E6E6FA","#D3D3D3","#DEB887","#FFFACD","#D8BFD8","#B0E0E6","#E0FFFF","#F08080","#FFF8DC","#FFD700","#DB7093","#FFA07A","#F5DEB3","#8FBC8B","#E9967A","#FFB6C1"];
   let yVal = 100;
   // Handmade legend
   for (let i = 0; i < legendNames.length; i++) {
@@ -102,8 +102,8 @@ function makeResponsive() {
 
 
   let color = d3.scale.ordinal()
-    .domain(["Produce", "Baking", "Spices and Seasonings", "Milk, Eggs, Other Dairy", "Canned and Jarred", "Cheese", "Meat", "Oil, Vinegar, Salad Dressing", "Condiments", "Ethnic Foods", "Pasta and Rice", "Sweet Snacks & Nuts", "Beverages", "Bakery/Bread", "Nut butters, Jams, and Honey"])
-    .range(["#8FBC8B", "#F0E68C", "#FFB6C1", "#FFF8DC", "#D3D3D3", "#FFFACD", "#F08080", "#FFA07A", "#D8BFD8", "#B0E0E6", "#F5DEB3", "#DB7093", "#BC8F8F", "#D2B48C", "#FFD700"]);
+    .domain(["Alcoholic Beverages","Bakery/Bread","Baking","Beverages","Canned and Jarred","Cereal","Cheese","Condiments","Ethnic Foods","Frozen/Refridgerated","Meat","Milk, Eggs, Other Dairy","Nut butters, Jams, and Honey","Nuts/Dried Fruits","Oil, Vinegar, Salad Dressing","Pasta and Rice","Produce","Seafood","Spices and Seasonings"])
+    .range(["#BC8F8F","#D2B48C","#F0E68C","#E6E6FA","#D3D3D3","#DEB887","#FFFACD","#D8BFD8","#B0E0E6","#E0FFFF","#F08080","#FFF8DC","#FFD700","#DB7093","#FFA07A","#F5DEB3","#8FBC8B","#E9967A","#FFB6C1"]);
 
   fetch('/passCuisine')
     .then(function (response) {
