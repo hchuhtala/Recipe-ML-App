@@ -3,9 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<link rel="icon" 
-	type="image/png" 
-	href="{{ url_for('static', filename='favicon.ico') }}">
+	<link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.ico') }}">
 	<title>Recipe Recommendations</title>
 
 	<!-- Bootstrap CSS -->
@@ -16,37 +14,31 @@
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/ingStyle.css') }}">
 
 	<!-- Navigation Section -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="{{ url_for('home') }}">Home</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<a class="select-ingredients">Select Ingredients...</a>
-		<!-- <button class="btn btn-outline-success my-2 my-sm-0 nav-item" type="submit" href="{{ url_for('recipes') }}">
-			View Recipes</button> -->
-		<a class="btn btn-outline-success my-2 my-sm-0 nav-item" type="submit" href="{{ url_for('recipes') }}">
+	<div class="navigation">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="{{ url_for('home') }}">Home</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="select-ingredients">Select Ingredients...</a>
+			<a class="btn btn-outline-success my-2 my-sm-0 nav-item" type="submit" href="{{ url_for('recipes') }}">
 				View Recipes</a>
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Pages
-					</a>
-					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-						<a class="dropdown-item" href="{{ url_for('ingredients') }}">Ingredients</a>
-						<a class="dropdown-item" href="{{ url_for('recipes') }}">Recipes</a>
-						<a class="dropdown-item" href="{{ url_for('notebook') }}">Notebook</a>
-					</div>
-				</li>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="{{ url_for('background') }}">Project Background</a>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+							aria-haspopup="true" aria-expanded="false">
+							Pages
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="{{ url_for('background') }}">Project Background</a>
+							<a class="dropdown-item" href="{{ url_for('notebook') }}">Notebook</a>
+						</div>
 					</li>
 				</ul>
-		</div>
-	</nav>
+			</div>
+		</nav>
 	</div>
 </head>
 
