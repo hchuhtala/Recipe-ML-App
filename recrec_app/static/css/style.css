@@ -2,10 +2,6 @@ body {
     padding: 0;
     margin: 0;
   }
-  html,body
-  {
-      overflow-x: hidden; 
-  }
   
   #map,
   body,
@@ -27,6 +23,12 @@ body {
     height: 100%;
     width: 100%;
   }
+  .ml-auto {margin-right: 20px;}
+.container {
+  align-content: center;
+  padding-top: 30px;
+  margin-top: 50px;
+}
   .navbar-brand{
     background-color: lightsteelblue!important;
     padding: 22px;
@@ -43,6 +45,9 @@ body {
     height: 75px;
     background-color: white;
   }
+  .bg-light {
+    background:white!important;
+  }
   #navbarDropdown {color: black}
   .ml-auto {margin-right: 20px;}
   .container {
@@ -50,5 +55,15 @@ body {
     padding-top: 30px;
     margin-top: 50px;
   }
+
+  #navbarNavDropdown {
+    position: relative;
+    z-index: 10000;
+    overflow: visible !important;
+  }
+  
+  .dropdown-menu{
+    position:absolute;
+    }
     
   
