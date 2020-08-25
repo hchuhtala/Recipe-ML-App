@@ -1,3 +1,8 @@
+html,body
+{
+    overflow-x: hidden; 
+}
+
 /* Navigation Bar */
 .select-ingredients{
   background-color: lightsteelblue;

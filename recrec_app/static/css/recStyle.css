@@ -1,4 +1,6 @@
 
+
+
 /* Navigation Bar */
 .ml-auto {margin-right: 20px;}
 .container {
@@ -25,7 +27,30 @@
 .bg-light {
   background:white!important;
 }
-  /* End Navigation Bar */
+
+/* .header .header-nav ul.dropdown-menu {
+  position: relative;
+  z-index: 10000;
+  overflow: visible !important;
+} */
+ 
+/* .navbar-collapse .collapse .show {
+  position: relative;
+  z-index: 10000;
+  overflow: visible !important;
+} */
+
+#navbarNavDropdown {
+  position: relative;
+  z-index: 10000;
+  overflow: visible !important;
+}
+
+.dropdown-menu{
+  position:absolute;
+  }
+  
+/* End Navigation Bar */
 
 /* Recipes page */
   thead {
@@ -34,6 +59,10 @@
     color: white;
     stroke: none;
   }
+  /* html,body
+{
+    overflow-x: hidden; 
+} */
   
   .recipe-title {
     font-size: 16pt;
