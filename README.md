@@ -28,7 +28,7 @@
 * [d3](https://d3js.org/)
 
 # Team
-* Ian Mac Moore [@blueplusred](https://github.com/blueplusred)
+* Ian Mac Moore [@zenfinity](https://github.com/blueplusred)
 * Haley Huhtala [@hchuhtala](https://github.com/hchuhtala)
 * Kaylene Retka [@knretka](https://github.com/knretka)
 * Briana Friendt [@frieb01](https://github.com/frieb01)
