@@ -25,6 +25,7 @@
 * [Bootstrap](https://getbootstrap.com/)
 * [Clustered Force Layout Bubble Chart](https://bl.ocks.org/ctufts/f38ef0187f98c537d791d24fda4a6ef9)
 * [Color Options](https://htmlcolorcodes.com/color-names/)
+* [d3](https://d3js.org/)
 
 # Team
 * Ian Mac Moore [@blueplusred](https://github.com/blueplusred)
