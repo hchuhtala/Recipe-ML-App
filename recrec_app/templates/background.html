@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Machine Learning</title>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+        integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+        crossorigin="" />
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+         
+
+</head>
+
+<body>
+  <!-- Navigation Section -->
+  <div class="navigation">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" style="background-color: lightgrey;" href="{{ url_for('home') }}">Home</a>
+      <button class="navbar-toggler border border-white" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Pages
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="Recipes.html">Recipes</a>
+              <a class="dropdown-item" href="{{ url_for('ingredients') }}">Ingredients</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('background') }}">Background</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+          <!--Begin page content-->
+          <div class="jumbotron">
+            <h1 class="display-4">Recipe Machine Learning</h1>
+            <p class="lead">Using machine learning, we created an interactive web app that gives the user recommended recipes based on a region or ingredient selected </p>
+            <hr class="my-4">
+            <p><strong>Analysis:</strong><br>
+                Clean, modify and filter the data using Pandas and Jupyter notebook<br>
+                Use Heroku and PostgreSQL as the database<br>
+                HTML, CSS and JavaScript on the front end<br>
+                Use D3, Leaflet and Bootstrap to visualize the data<br>
+                <br>
+                <strong>Data Sources:</strong><br>
+                <a href="https://www.kaggle.com/c/whats-cooking/data">Kaggle</a><br>
+                <a href="https://spoonacular.com/food-api">Spoonacular API</a><br>
+                <br>
+                <strong>Built With:</strong><br>
+                <a href="https://leafletjs.com/" >Leaflet</a><br>
+                <a href="https://www.python.org/" >Python</a><br>
+                <a href="https://pandas.pydata.org/" >Pandas</a><br>
+                <a href="https://www.heroku.com/" >Heroku</a><br>
+                <a href="https://getbootstrap.com/" >Bootstrap</a><br>
+               <br>
+                <strong>Team:</strong><br>
+                Ian Mac Moore<br>
+                Haley Huhtala <br>
+                Kaylene Retka <br>
+                Briana Friendt <br>
+            </p>
+            <a class="btn btn-primary btn-lg" href="{{ url_for('home') }}" role="button">Map</a>
+          </div>
+     
+
+      <!-- Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" 
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" 
+      crossorigin="anonymous"></script>
+  
+  </body>
+  
+  </html>

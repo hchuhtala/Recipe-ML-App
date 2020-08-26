@@ -1,80 +1,107 @@
+#################################################
+# Import
+#################################################
 # import necessary libraries
-# from models import create_classes
 import os
 from flask import (
     Flask,
     render_template,
     jsonify,
     request,
-    redirect)
+    redirect,
+    make_response,
+    g)
 
+s_key = os.environ.get('API_KEY_S')
+#print("S Key ",s_key)
 #################################################
 # Flask Setup
 #################################################
 app = Flask(__name__)
 
-# #################################################
-# # Database Setup
-# #################################################
-
-# from flask_sqlalchemy import SQLAlchemy
-# app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', '') or "sqlite:///db.sqlite"
-
-# # Remove tracking modifications
-# app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-
-# db = SQLAlchemy(app)
-
-# Pet = create_classes(db)
-
+#################################################
+# Basic Routes
+#################################################
 # create route that renders index.html template
 @app.route("/")
 def home():
     return render_template("index.html")
 
+@app.route("/background")
+def background():
+    return render_template("background.html")
 
-# # Query the database and send the jsonified results
-# @app.route("/send", methods=["GET", "POST"])
-# def send():
-#     if request.method == "POST":
-#         name = request.form["petName"]
-#         lat = request.form["petLat"]
-#         lon = request.form["petLon"]
+@app.route("/ingredients")
+def ingredients():
+    #print('inside /ingredients route')
+    return render_template("ingredients.html")
 
-#         pet = Pet(name=name, lat=lat, lon=lon)
-#         db.session.add(pet)
-#         db.session.commit()
-#         return redirect("/", code=302)
+@app.route("/recipes")
+def recipes():
+    return render_template("recipes.html")
 
-#     return render_template("form.html")
+@app.route("/notebook")
+def notebook():
+    return redirect("https://nbviewer.jupyter.org/github/hchuhtala/Recipe-ML-App/blob/master/ML/Data%20Cleaning%20and%20Exploration.ipynb")
 
+#@app.add_url_rule('/favicon.ico', redirect_to=url_for('static', filename='favicon.ico'))
 
-# @app.route("/api/pals")
-# def pals():
-#     results = db.session.query(Pet.name, Pet.lat, Pet.lon).all()
+#################################################
+# Data Routes
+#################################################
+#Serve API key via cookie to config.js
+@app.route("/key")
+def serveKey():
+    resp = request.cookies.get('S_Key')
+    #print("key resp ",resp)
+    return resp
 
-#     hover_text = [result[0] for result in results]
-#     lat = [result[1] for result in results]
-#     lon = [result[2] for result in results]
+#Open ingredients page from map, and create cookie with cuisine selection
+@app.route("/ingredients/<cuisine>")
+def loadCuisine(cuisine):
+    resp = make_response(render_template("ingredients.html"))
+    resp.set_cookie('S_Key',s_key)
+    resp.set_cookie('Cuisine', cuisine)
+    #print("In loadCuisine key resp",resp.set_cookie('S_Key',s_key))
+    #print("In loadCuisine cookie is", request.cookies.get('Cuisine'))
+    return resp
 
-#     pet_data = [{
-#         "type": "scattergeo",
-#         "locationmode": "USA-states",
-#         "lat": lat,
-#         "lon": lon,
-#         "text": hover_text,
-#         "hoverinfo": "text",
-#         "marker": {
-#             "size": 50,
-#             "line": {
-#                 "color": "rgb(8,8,8)",
-#                 "width": 1
-#             },
-#         }
-#     }]
+#Supply cuisine from map page to ingredients page app.js
+@app.route("/passCuisine")
+def passCuisine():
+    #print('inside passCuisine route')
+    #regionString = cuisine
+     # POST request
+    if request.method == 'POST':
+        print('Incoming..')
+        print(request.get_json())  # parse as JSON
+        return 'OK', 200
+    # GET request
+    else:
+        resp = request.cookies.get('Cuisine')
+        return resp 
 
-#     return jsonify(pet_data)
+#Receive array of ingredients from ingredients page app.js
+@app.route("/loadIngredients", methods = ['POST'])
+def loadIngredients():
+    array = request.get_data()
+    resp = make_response()
+    resp.set_cookie('Ingredients', array)
+    #print("In loadIngredients cookie is", request.cookies.get('Ingredients'))
+    return resp
 
+#Supply ingredients array AND cuisine to recipe.js
+@app.route("/getIngredients")
+def getIngredients():
+    ing = str(request.cookies.get('Ingredients'))
+    cus = str(request.cookies.get('Cuisine'))
+    key = str(request.cookies.get('S_Key'))
+    resp = cus + "," + ing + "," + key
+    #print("resp in getIngredients: ", resp)
+    return resp
 
+#################################################
+# Finish
+#################################################
 if __name__ == "__main__":
     app.run()
