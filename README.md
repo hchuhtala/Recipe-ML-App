@@ -3,6 +3,8 @@
 # Description
 > Using machine learning, we created an interactive web app that gives the user recommended recipes based on a region or ingredient selected 
 
+<!-- ![ERD.PNG](ERD.PNG) -->
+
 # Data Sources
 * [**Kaggle**](https://www.kaggle.com/c/whats-cooking/data)
 *	[**Spoonacular API**](https://spoonacular.com/food-api)
