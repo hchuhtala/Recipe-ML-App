@@ -4,8 +4,8 @@
 > Using machine learning, we created an interactive web app that gives the user recommended recipes based on a region or ingredient selected 
 
 # [**Site**](https://dvabc-recrec.herokuapp.com/)
-To choose a cuisine, select a region from the map:
-<br><br/>
+To choose a cuisine, select a region from the map:\
+
 ![homepage_screenshot.PNG](https://github.com/hchuhtala/Recipe-ML-App/blob/master/homepage_screenshot.png)
 <br><br/>
 Choose the ingredients you want to cook with:
