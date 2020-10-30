@@ -6,15 +6,15 @@
 # [**Site**](https://dvabc-recrec.herokuapp.com/)
 To choose a cuisine, select a region from the map:
 <br><br/>
-![homepage_screenshot.PNG](https://github.com/hchuhtala/Recipe-ML-App/blob/master/recipe_screenshot.png)
+![homepage_screenshot.PNG](https://github.com/hchuhtala/Recipe-ML-App/blob/master/homepage_screenshot.png)
 <br><br/>
 Choose the ingredients you want to cook with:
 <br><br/>
-![ingredients_screenshot.PNG](ingredients_screenshot.PNG)
+![ingredients_screenshot.PNG](https://github.com/hchuhtala/Recipe-ML-App/blob/master/ingredients_screenshot.png)
 <br><br/>
 A list of recipes for your selected cuisine and ingredients will appear:
 <br><br/>
-![recipe_screenshot.PNG](recipe_screenshot.PNG)
+![recipe_screenshot.PNG](https://github.com/hchuhtala/Recipe-ML-App/blob/master/recipe_screenshot.png)
 <br><br/>
 
 
