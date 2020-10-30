@@ -1,17 +1,30 @@
 # Recipe-ML-App
 
-# Description
+
 > Using machine learning, we created an interactive web app that gives the user recommended recipes based on a region or ingredient selected 
 
-<!-- ![ERD.PNG](ERD.PNG) -->
+# [**Site**](https://dvabc-recrec.herokuapp.com/)
+To choose a cuisine, select a region from the map:
+<br><br/>
+![homepage_screenshot.PNG](homepage_screenshot.PNG)
+<br><br/>
+Choose the ingredients you want to cook with:
+<br><br/>
+![ingredients_screenshot.PNG](ingredients_screenshot.PNG)
+<br><br/>
+A list of recipes for your selected cuisine and ingredients will appear:
+<br><br/>
+![recipe_screenshot.PNG](recipe_screenshot.PNG)
+<br><br/>
+
 
 # Data Sources
 * [**Kaggle**](https://www.kaggle.com/c/whats-cooking/data)
-*	[**Spoonacular API**](https://spoonacular.com/food-api)
+* [**Spoonacular API**](https://spoonacular.com/food-api)
 
 # Analysis
 * Clean, modify and filter the data using Pandas and Jupyter notebook 
-* Fit models from scikit-learn
+* Fit ML models from scikit-learn 
 * Use Heroku and PostgreSQL as the database
 * HTML, CSS and JavaScript on the front end
 * Use D3, Leaflet and Bootstrap to visualize the data
